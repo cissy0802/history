@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>History: Artificial Intelligence — Day 10</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Noto Serif SC","Songti SC",Georgia,"Times New Roman",serif;background:#ede6d8;color:#3a2e1f;line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 22px 70px}
+header{text-align:center;padding:60px 0 36px;border-bottom:2px double #a35d2b;margin-bottom:40px}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:4px;color:#a35d2b;background:#faf3e3;padding:5px 14px;border-radius:2px;border:1px solid #c69968;text-transform:uppercase;margin-bottom:18px}
+header h1{font-size:2.15rem;font-weight:800;color:#5a3a1e;letter-spacing:3px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#7a5e3a;font-style:italic}
+header .epigraph{margin-top:22px;font-size:0.95rem;color:#5a3a1e;font-style:italic;max-width:580px;margin-left:auto;margin-right:auto;padding:14px 18px;border-left:3px solid #a35d2b;background:rgba(255,255,255,0.35);text-align:left}
+.event{background:#faf3e3;border-radius:4px;padding:34px 32px;margin-bottom:34px;box-shadow:0 2px 12px rgba(90,58,30,0.10);border-top:4px solid #a35d2b;position:relative}
+.event::before{content:"";position:absolute;top:-4px;left:0;right:0;height:4px;background:linear-gradient(90deg,#a35d2b 0%,#c69968 70%,transparent 100%)}
+.event-num{font-size:0.78rem;letter-spacing:3px;color:#a35d2b;font-weight:700;margin-bottom:6px}
+.event h2{font-size:1.5rem;color:#5a3a1e;font-weight:700;line-height:1.4;margin-bottom:10px}
+.event h2 .en{display:block;font-size:0.88rem;color:#7a5e3a;font-style:italic;font-weight:400;letter-spacing:0.5px;margin-top:4px}
+.tag{display:inline-block;font-size:0.78rem;color:#7a5e3a;background:#ede6d8;padding:3px 10px;border-radius:2px;margin-right:6px;margin-top:4px}
+.section{margin-top:20px}
+.section-label{font-size:0.82rem;font-weight:700;color:#a35d2b;letter-spacing:2px;margin-bottom:6px;padding-bottom:4px;border-bottom:1px dotted #c69968}
+.section p{font-size:0.97rem;color:#3a2e1f;text-align:justify}
+.section em{color:#5a3a1e;font-style:italic;font-weight:600}
+.counter{background:rgba(163,93,43,0.08);padding:14px 16px;border-left:3px solid #a35d2b;margin-top:8px;border-radius:0 4px 4px 0;font-size:0.96rem}
+.thought{background:rgba(198,153,104,0.18);padding:14px 16px;border-radius:3px;font-size:0.95rem;color:#5a3a1e}
+.thought::before{content:"❖ ";color:#a35d2b}
+.lesson{font-size:1rem;color:#5a3a1e;font-weight:600;padding:10px 14px;background:rgba(255,255,255,0.45);border-left:3px solid #c69968;margin-bottom:10px}
+.timeline{margin:14px 0 4px;padding:16px 18px;background:rgba(255,255,255,0.4);border-radius:4px;border:1px solid #d8c4a0}
+.timeline .row{display:flex;gap:14px;align-items:baseline;padding:5px 0;font-size:0.9rem;border-bottom:1px dotted #d8c4a0}
+.timeline .row:last-child{border-bottom:none}
+.timeline .yr{flex-shrink:0;min-width:64px;color:#a35d2b;font-weight:700;letter-spacing:1px}
+.timeline .ev{color:#3a2e1f}
+.deep{background:#faf3e3;border-radius:4px;padding:28px 30px;margin-bottom:30px;box-shadow:0 2px 10px rgba(90,58,30,0.08);border-left:4px solid #a35d2b}
+.deep h3{font-size:1.2rem;color:#5a3a1e;margin-bottom:14px;letter-spacing:1.5px}
+.deep ul{list-style:none;padding-left:0}
+.deep li{padding:6px 0 6px 18px;position:relative;font-size:0.92rem;color:#3a2e1f}
+.deep li::before{content:"◆";position:absolute;left:0;color:#a35d2b;font-size:0.7rem;top:10px}
+.deep details{margin:10px 0;padding:12px 16px;background:rgba(255,255,255,0.5);border-radius:3px;border-left:2px solid #c69968}
+.deep summary{cursor:pointer;font-weight:600;color:#5a3a1e;font-size:0.96rem}
+.deep details[open] summary{margin-bottom:8px}
+.deep details div{font-size:0.92rem;color:#3a2e1f;line-height:1.75;padding-top:4px;border-top:1px dotted #c69968}
+footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+.container{padding:16px 14px 40px}
+header{padding:40px 0 26px}
+header h1{font-size:1.55rem;letter-spacing:1.5px}
+.event{padding:24px 18px}
+.event h2{font-size:1.22rem}
+.section p{font-size:0.94rem}
+.timeline .yr{min-width:52px}
+}
+</style></head><body><div class="container">
+
+<header>
+<div class="week-tag">Day 10 · Artificial Intelligence</div>
+<h1>Machines That Think: AI's Four Summers</h1>
+<div class="meta">Monday, July 6, 2026 · BigCat's Time Machine</div>
+<div class="epigraph">"As soon as it works, no one calls it AI anymore." This is the so-called AI effect. For seventy years AI has cycled through summer, winter, and revival—not a smooth rising curve but a sequence of bets, disillusionment, and fresh bets. Behind every turning point sits a small group of people wagering on what intelligence actually is.</div>
+</header>
+
+<!-- Event 1 -->
+<article class="event">
+<div class="event-num">EVENT · 01</div>
+<h2>Dartmouth: One Word That Drew a Discipline<span class="en">The Dartmouth Workshop · 1956</span></h2>
+<span class="tag">Summer 1956</span><span class="tag">Hanover, USA</span><span class="tag">Symbolism</span>
+
+<div class="section"><div class="section-label">Background & Key Figures</div><p>In 1955, the 28-year-old mathematician <em>John McCarthy</em> drafted a proposal to the Rockefeller Foundation. Needing a neutral name for the new field—one that sidestepped Norbert Wiener's "cybernetics"—he chose <strong>Artificial Intelligence</strong>. The proposal contained the famous claim: that <strong>every aspect</strong> of intelligence could in principle be described precisely enough for a machine to simulate it. Co-organizers included Marvin Minsky and Claude Shannon, father of information theory.</p></div>
+
+<div class="section"><div class="section-label">What Happened</div><p>In the summer of 1956, ten researchers gathered at Dartmouth College, planning to make "significant progress" in two months. The real stars were not the theorists: Allen Newell and Herbert Simon brought a working program, the <strong>Logic Theorist</strong>, which proved theorems from <em>Principia Mathematica</em>—one proof even more elegant than the original. The meeting solved nothing large, yet it set the mainstream path for three decades: <em>symbolism</em>—intelligence as logical operations on symbols. The neural-network camp was pushed to the margins.</p></div>
+
+<div class="section"><div class="section-label">Counterfactual + Historical Debate</div><div class="counter"><p><em>Pamela McCorduck's Machines Who Think (1979)</em> records their startling optimism: Simon predicted in 1965 that "machines will be capable of doing any work a man can do" within twenty years; Minsky said in 1967 the problem would be "substantially solved" within a generation. Counterfactual: had Dartmouth not so loudly promised general intelligence, <strong>would the two winters have been less cold?</strong> Historians debate (see <em>Nils Nilsson's The Quest for AI, 2010</em>): were symbolism's early wins real breakthroughs, or "toy problems" mistaken for a staircase to intelligence?</p></div></div>
+
+<div class="section"><div class="section-label">Modern Parallel</div><p>Today's disputes over <strong>when AGI arrives</strong> replay Dartmouth's optimism almost exactly: extrapolating today's local breakthroughs into promises of general intelligence.</p></div>
+
+<div class="section"><div class="section-label">One-Line Lesson + Question</div><div class="lesson">Naming a field grants it an identity and, at the same time, writes a check it cannot cash—the bigger the name, the deeper the later disillusionment.</div><div class="thought">What is your field currently promising will "inevitably arrive within twenty years"? Have you truly thought through the constraints on cashing that check?</div></div>
+</article>
+
+<!-- Event 2 -->
+<article class="event">
+<div class="event-num">EVENT · 02</div>
+<h2>Winters & Expert Systems: Two Swings of the Pendulum<span class="en">AI Winters & Expert Systems · 1969–1993</span></h2>
+<span class="tag">1969 / 1987</span><span class="tag">UK & USA</span><span class="tag">Connectionism stalled</span>
+
+<div class="section"><div class="section-label">Background & Key Figures</div><p>Broken promises carried a price. In 1969, Minsky and Papert published <em>Perceptrons</em>, proving mathematically that a single-layer neural network cannot even learn "exclusive or"—<strong>funding for neural-network research dried up almost overnight</strong>. Britain's 1973 <em>Lighthill Report</em> then suspended much of Europe's AI funding. The first winter had arrived.</p></div>
+
+<div class="section"><div class="section-label">What Happened</div><p>In the 1980s, AI warmed up again through <strong>expert systems</strong>: encoding an expert's judgment into thousands of "if…then" rules. DEC's XCON configured VAX orders and reportedly saved tens of millions a year; the medical system MYCIN briefly dazzled. Industry poured money into dedicated LISP machines. But the bubble was fragile: rules multiplied and clashed, anything outside the rules caused collapse, and experts had to hand-feed knowledge—the <em>"knowledge-acquisition bottleneck."</em> In 1987 the LISP-machine market crashed, and the second winter set in.</p></div>
+
+<div class="section"><div class="section-label">Counterfactual + Historical Debate</div><div class="counter"><p>The sharpest counterfactual: <strong>had Perceptrons not frozen neural networks out in 1969</strong>, would the deep learning of Geoffrey Hinton's circle have matured twenty years earlier? Historians split (see <em>Cade Metz's Genius Makers, 2021</em>): one camp says a single book killed an entire path; the other counters that the era's compute and data could never have supported deep networks anyway—the winter was inevitable under hard constraints, not one book's fault. The truth may be: <em>the direction was right, but the ground had not yet set</em>.</p></div></div>
+
+<div class="section"><div class="section-label">Modern Parallel</div><p>The "knowledge-acquisition bottleneck" is precisely the old problem today's large models try to bypass: <strong>rather than have humans write rules one by one, let the machine grow rules from vast data</strong>. Hand-written rules vs. data-driven emergence are two generations' answers to one question.</p></div>
+
+<div class="section"><div class="section-label">One-Line Lesson + Question</div><div class="lesson">An idea that "doesn't work" is often just an idea whose ground hasn't set—what gets falsified is usually not the direction, but the timing.</div><div class="thought">Do you hold an old idea once judged "unworkable"? Was it blocked by logic—or merely by the compute, data, and cost of its day?</div></div>
+</article>
+
+<!-- Event 3 -->
+<article class="event">
+<div class="event-num">EVENT · 03</div>
+<h2>AlphaGo's Move 37: A Machine's "Inhuman" Move<span class="en">AlphaGo vs Lee Sedol · 2016</span></h2>
+<span class="tag">Mar 2016</span><span class="tag">Seoul, Korea</span><span class="tag">Deep RL</span>
+
+<div class="section"><div class="section-label">Background & Key Figures</div><p>Go was long seen as AI's Everest. Its board allows 10<sup>170</sup> positions—more than the atoms in the universe—so brute force is hopeless; the 1997 machine that beat Kasparov, "Deep Blue," and its exhaustive search would fail here. Masters rely on an inexpressible "feel." DeepMind's <em>Demis Hassabis</em> chose to attack it anyway: combining <strong>deep neural networks</strong> (to evaluate positions) with <strong>Monte Carlo tree search</strong>, then letting the program play millions of games against itself, learning backward from wins and losses.</p></div>
+
+<div class="section"><div class="section-label">What Happened</div><p>From March 9–15, 2016, AlphaGo faced world-elite player <em>Lee Sedol</em> in a best-of-five. In game two, at <strong>Move 37</strong>, AlphaGo played where almost no human would consider—commentators were stunned, professionals said "no human would play that," yet it proved brilliant. AlphaGo won 4–1. In game four Lee answered with his own divine "Move 78" to claw back a win—among humanity's last victories over a top AI.</p></div>
+
+<div class="section"><div class="section-label">Counterfactual + Historical Debate</div><div class="counter"><p>Counterfactual: <strong>had Lee won 4–1</strong>, would the capital frenzy around deep reinforcement learning have been delayed years? The debate centers on Move 37's meaning—did the machine <em>truly acquire intuition</em>, or merely compute a probability space humans had never explored? <em>Melanie Mitchell's Artificial Intelligence (2019)</em> cautions: AlphaGo dazzles, yet knows nothing of what Go <em>is</em> or why it is played; it masters one domain without transferable common sense.</p></div></div>
+
+<div class="section"><div class="section-label">Modern Parallel</div><p>"Machines proposing options humans never imagined, yet verified as better" is spreading: AlphaFold predicting protein structures, AI designing chip layouts. The real value of human-machine collaboration is not replacement but <strong>expanding the human search space</strong>—showing you the move beyond your own field of vision.</p></div>
+
+<div class="section"><div class="section-label">One-Line Lesson + Question</div><div class="lesson">When a machine plays an "inhuman" move, what is offended is not the craft, but the belief that intuition belongs to humans alone.</div><div class="thought">In your own field, is there an "intuition" you take pride in that is merely a probability space no algorithm has yet mapped?</div></div>
+</article>
+
+<!-- Event 4 -->
+<article class="event">
+<div class="event-num">EVENT · 04</div>
+<h2>ChatGPT: An Avalanche From a "Low-Key Preview"<span class="en">The ChatGPT Moment · 2022</span></h2>
+<span class="tag">Nov 30, 2022</span><span class="tag">San Francisco</span><span class="tag">Large Language Models</span>
+
+<div class="section"><div class="section-label">Background & Key Figures</div><p>In 2017 a Google team published <em>Attention Is All You Need</em>, introducing the <strong>Transformer</strong>—an architecture that lets a model process long text in parallel, the foundation of every large model since. OpenAI scaled this path, building GPT-3 in 2020. But raw GPT-3 was hard to steer, often off-topic. The key step was <strong>RLHF</strong> (reinforcement learning from human feedback): using human preferences to align the model, teaching it to follow instructions and speak well.</p></div>
+
+<div class="section"><div class="section-label">What Happened</div><p>On November 30, 2022, OpenAI wrapped this capability in a chat box and released it as a "low-key research preview," internally expecting a muted response. Instead: <strong>one million users in five days, one hundred million in two months</strong>—the fastest-growing consumer app in history. For the first time, ordinary people could summon AI in natural language. The technology had existed for years; what ignited it was the layer that "anyone can use."</p></div>
+
+<div class="section"><div class="section-label">Counterfactual + Historical Debate</div><div class="counter"><p>The most intriguing counterfactual: <strong>Google held the Transformer and the earlier chat model LaMDA—why did it not ship first?</strong> Because incumbents fear reputational risk—models hallucinate and offend. This is the classic <em>innovator's dilemma</em>: the reigning giant dares not tarnish its brand with an imperfect product, and is outflanked by a challenger with nothing to lose. Historians broadly agree (echoing Day 9's Web): ChatGPT's decisive edge lay not in a stronger model but in the <strong>distribution decision—free, public, open to all</strong>.</p></div></div>
+
+<div class="section"><div class="section-label">Modern Parallel</div><p>This is where the "AI super-individual" begins: when the cost of summoning a top model falls to a chat box, <strong>leverage sinks from the organization down to the individual</strong>. Every past democratization of a general-purpose tool—printing, the personal computer, the internet—redistributed who gets to create.</p></div>
+
+<div class="section"><div class="section-label">One-Line Lesson + Question</div><div class="lesson">What decides a technology's fate is often not how strong it is, but who dares be first to place it in everyone's hands.</div><div class="thought">Is there a capability around you that is "already mature, missing only an interface anyone can use"? Who will be the challenger who ignores reputation and moves first?</div></div>
+</article>
+
+<!-- Timeline -->
+<section class="deep">
+<h3>Seventy Years of AI</h3>
+<div class="timeline">
+<div class="row"><span class="yr">1956</span><span class="ev">Dartmouth workshop; "Artificial Intelligence" born; symbolism ascendant</span></div>
+<div class="row"><span class="yr">1969</span><span class="ev">Perceptrons cripples neural nets; first winter nears</span></div>
+<div class="row"><span class="yr">1980s</span><span class="ev">Expert systems revive commercially; 1987 LISP-machine crash, second winter</span></div>
+<div class="row"><span class="yr">2012</span><span class="ev">AlexNet ignites deep learning; connectionism rebounds</span></div>
+<div class="row"><span class="yr">2016</span><span class="ev">AlphaGo beats Lee Sedol 4–1</span></div>
+<div class="row"><span class="yr">2017</span><span class="ev">The Transformer architecture appears</span></div>
+<div class="row"><span class="yr">2022</span><span class="ev">ChatGPT launches; 100M users in two months</span></div>
+</div>
+</section>
+
+<!-- Deep Thinking -->
+<section class="deep">
+<h3>Going Deeper</h3>
+
+<details><summary>1. Symbolism vs. connectionism—a sixty-year pendulum?</summary>
+<div>In 1956 Dartmouth bet on symbols (writing rules) and by 1969 suppressed neural nets; after 2012 connectionism (learning from data) swept back. On the surface, "data beat rules." Yet the frontier now stitches the two together—large models calling tools, obeying symbolic constraints (neuro-symbolic AI). <strong>The pendulum was perhaps never either/or; each generation could only grasp the end its ground allowed</strong>. To judge today's disputes, first ask: this time, how far have compute and data pushed the boundary of the possible?</div></details>
+
+<details><summary>2. Why is AI history "summer–winter" cycles, not smooth ascent? (echoing Days 7 & 9's long waves)</summary>
+<div>Carlota Pérez's framework of technological revolutions fits here too: each breakthrough first draws an "installation" bubble of capital and promises; when returns lag, it collapses into winter; only after sediment settles comes the pragmatic "deployment" era. AI's two winters were, at root, <strong>promises cashing in slower than funding burned</strong>. If the framework holds, today's large-model boom will not escape a bubble deflation—the only question is whether this time the "ground" (compute, data, capital) is thick enough to survive the correction.</div></details>
+
+<details><summary>3. Is AlphaGo's "intuition" the same thing as a human's?</summary>
+<div>A human player's feel comes from pattern recognition distilled over limited games; AlphaGo's comes from a value function trained on millions of self-play games. Both "compress experience for fast judgment"—functionally alike. But the difference: human intuition is embedded in meaning (knowing why one plays), the machine's is not. This touches the consciousness question—<strong>does similarity of capability imply similarity of mind?</strong> For a system that computes a brilliant move without knowing what "brilliant" means, how do we assign responsibility for its judgments?</div></details>
+
+<details><summary>4. When the cost of summoning intelligence falls to zero, what becomes scarce?</summary>
+<div>Printing drove the cost of copying text toward zero, and scarcity moved from "transcription" to "what is worth printing"; large models drive text generation toward zero, and scarcity rises again. When answers are effortless, the ability to <strong>ask good questions, judge right from wrong, and bear the consequences of a decision</strong> grows more precious. The real leverage of the "AI super-individual" lies not in wielding tools but in keeping what machines cannot yet supply: taste, judgment, responsibility. Which judgments are you outsourcing without a second thought?</div></details>
+</section>
+
+<footer>BigCat · History · Day 10 · 2026.07.06</footer>
+
+</div></body></html>
