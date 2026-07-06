@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>历史：人工智能 — Day 10</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Noto Serif SC","Songti SC",Georgia,"Times New Roman",serif;background:#ede6d8;color:#3a2e1f;line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 22px 70px}
+header{text-align:center;padding:60px 0 36px;border-bottom:2px double #a35d2b;margin-bottom:40px}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:4px;color:#a35d2b;background:#faf3e3;padding:5px 14px;border-radius:2px;border:1px solid #c69968;text-transform:uppercase;margin-bottom:18px}
+header h1{font-size:2.15rem;font-weight:800;color:#5a3a1e;letter-spacing:3px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#7a5e3a;font-style:italic}
+header .epigraph{margin-top:22px;font-size:0.95rem;color:#5a3a1e;font-style:italic;max-width:580px;margin-left:auto;margin-right:auto;padding:14px 18px;border-left:3px solid #a35d2b;background:rgba(255,255,255,0.35);text-align:left}
+.event{background:#faf3e3;border-radius:4px;padding:34px 32px;margin-bottom:34px;box-shadow:0 2px 12px rgba(90,58,30,0.10);border-top:4px solid #a35d2b;position:relative}
+.event::before{content:"";position:absolute;top:-4px;left:0;right:0;height:4px;background:linear-gradient(90deg,#a35d2b 0%,#c69968 70%,transparent 100%)}
+.event-num{font-size:0.78rem;letter-spacing:3px;color:#a35d2b;font-weight:700;margin-bottom:6px}
+.event h2{font-size:1.5rem;color:#5a3a1e;font-weight:700;line-height:1.4;margin-bottom:10px}
+.event h2 .en{display:block;font-size:0.88rem;color:#7a5e3a;font-style:italic;font-weight:400;letter-spacing:0.5px;margin-top:4px}
+.tag{display:inline-block;font-size:0.78rem;color:#7a5e3a;background:#ede6d8;padding:3px 10px;border-radius:2px;margin-right:6px;margin-top:4px}
+.section{margin-top:20px}
+.section-label{font-size:0.82rem;font-weight:700;color:#a35d2b;letter-spacing:2px;margin-bottom:6px;padding-bottom:4px;border-bottom:1px dotted #c69968}
+.section p{font-size:0.97rem;color:#3a2e1f;text-align:justify}
+.section em{color:#5a3a1e;font-style:italic;font-weight:600}
+.counter{background:rgba(163,93,43,0.08);padding:14px 16px;border-left:3px solid #a35d2b;margin-top:8px;border-radius:0 4px 4px 0;font-size:0.96rem}
+.thought{background:rgba(198,153,104,0.18);padding:14px 16px;border-radius:3px;font-size:0.95rem;color:#5a3a1e}
+.thought::before{content:"❖ ";color:#a35d2b}
+.lesson{font-size:1rem;color:#5a3a1e;font-weight:600;padding:10px 14px;background:rgba(255,255,255,0.45);border-left:3px solid #c69968;margin-bottom:10px}
+.timeline{margin:14px 0 4px;padding:16px 18px;background:rgba(255,255,255,0.4);border-radius:4px;border:1px solid #d8c4a0}
+.timeline .row{display:flex;gap:14px;align-items:baseline;padding:5px 0;font-size:0.9rem;border-bottom:1px dotted #d8c4a0}
+.timeline .row:last-child{border-bottom:none}
+.timeline .yr{flex-shrink:0;min-width:64px;color:#a35d2b;font-weight:700;letter-spacing:1px}
+.timeline .ev{color:#3a2e1f}
+.deep{background:#faf3e3;border-radius:4px;padding:28px 30px;margin-bottom:30px;box-shadow:0 2px 10px rgba(90,58,30,0.08);border-left:4px solid #a35d2b}
+.deep h3{font-size:1.2rem;color:#5a3a1e;margin-bottom:14px;letter-spacing:1.5px}
+.deep ul{list-style:none;padding-left:0}
+.deep li{padding:6px 0 6px 18px;position:relative;font-size:0.92rem;color:#3a2e1f}
+.deep li::before{content:"◆";position:absolute;left:0;color:#a35d2b;font-size:0.7rem;top:10px}
+.deep details{margin:10px 0;padding:12px 16px;background:rgba(255,255,255,0.5);border-radius:3px;border-left:2px solid #c69968}
+.deep summary{cursor:pointer;font-weight:600;color:#5a3a1e;font-size:0.96rem}
+.deep details[open] summary{margin-bottom:8px}
+.deep details div{font-size:0.92rem;color:#3a2e1f;line-height:1.75;padding-top:4px;border-top:1px dotted #c69968}
+footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+.container{padding:16px 14px 40px}
+header{padding:40px 0 26px}
+header h1{font-size:1.55rem;letter-spacing:1.5px}
+.event{padding:24px 18px}
+.event h2{font-size:1.22rem}
+.section p{font-size:0.94rem}
+.timeline .yr{min-width:52px}
+}
+</style></head><body><div class="container">
+
+<header>
+<div class="week-tag">Day 10 · 人工智能</div>
+<h1>会思考的机器：AI 的四次夏天</h1>
+<div class="meta">2026 年 7 月 6 日（周一） · BigCat's Time Machine</div>
+<div class="epigraph">「一旦某件事真做成了，就没人再叫它 AI 了。」——这被称作「AI 效应」。七十年里，AI 反复经历「夏天—寒冬—复苏」：不是一条直线上升的曲线，而是一次次押注、幻灭、再押注。每一次转折的背后，都是一小群人对「智能到底是什么」下的赌注。</div>
+</header>
+
+<!-- Event 1 -->
+<article class="event">
+<div class="event-num">EVENT · 01</div>
+<h2>达特茅斯：一个词，划出一个学科<span class="en">The Dartmouth Workshop · 1956</span></h2>
+<span class="tag">1956 夏</span><span class="tag">美国·汉诺威</span><span class="tag">符号主义</span>
+
+<div class="section"><div class="section-label">背景与关键人物</div><p>1955 年，28 岁的数学家 <em>约翰·麦卡锡</em>（John McCarthy）为申请洛克菲勒基金会资助，起草了一份提案。他要为这个新领域取一个中性的名字，以避开 Norbert Wiener 已占据的「控制论」——他选了 <strong>Artificial Intelligence</strong>。提案里写下那句日后被反复引用的断言：智能的<strong>每一个方面</strong>，原则上都能精确到让机器去模拟。共同发起者还有 Marvin Minsky、信息论之父 Claude Shannon。</p></div>
+
+<div class="section"><div class="section-label">经过</div><p>1956 年夏，十位研究者聚在达特茅斯学院，计划用两个月「取得实质进展」。真正的明星不是空谈者：Allen Newell 与 Herbert Simon 带来了已能运行的 <strong>逻辑理论家</strong>（Logic Theorist），它自动证明了《数学原理》里的定理，有一条证明甚至比原书更简洁。会议没解决任何大问题，却确立了此后三十年的主流路线——<em>符号主义</em>：智能＝对符号进行逻辑操作。神经网络那一支，被推到了边缘。</p></div>
+
+<div class="section"><div class="section-label">反事实 + 历史学争论</div><div class="counter"><p><em>Pamela McCorduck《Machines Who Think》(1979)</em>记录了这群人惊人的乐观：Simon 1965 年预言「二十年内机器能做人所能做的一切」，Minsky 1967 年称「一代人之内」问题将基本解决。反事实：若达特茅斯没有如此高调地承诺通用智能，后来的<strong>两次寒冬会不会没那么冷</strong>？史界争论（见 <em>Nils Nilsson《The Quest for AI》(2010)</em>）：符号主义的早期胜利究竟是真突破，还是把「玩具问题」误当成了通往智能的阶梯？</p></div></div>
+
+<div class="section"><div class="section-label">当下平行</div><p>今天关于 <strong>AGI 何时到来</strong>的时间表之争，几乎是达特茅斯乐观主义的复刻：同样把当下的局部突破，外推成对通用智能的承诺。</p></div>
+
+<div class="section"><div class="section-label">一句话教训 + 思考题</div><div class="lesson">给一个领域命名，等于同时给了它身份和一张无法兑现的支票——名字有多大，日后的幻灭就有多深。</div><div class="thought">你所在的领域，此刻正对外承诺着什么「二十年内必然实现」？这张支票的兑现约束，真的想清楚了吗？</div></div>
+</article>
+
+<!-- Event 2 -->
+<article class="event">
+<div class="event-num">EVENT · 02</div>
+<h2>寒冬与专家系统：钟摆的两次回荡<span class="en">AI Winters & Expert Systems · 1969–1993</span></h2>
+<span class="tag">1969 / 1987</span><span class="tag">英美</span><span class="tag">连接主义受挫</span>
+
+<div class="section"><div class="section-label">背景与关键人物</div><p>承诺落空，代价随之而来。1969 年，Minsky 与 Papert 出版《感知机》（Perceptrons），用数学证明单层神经网络连「异或」都学不会——<strong>神经网络研究的经费几乎瞬间枯竭</strong>。1973 年英国的 <em>Lighthill 报告</em>又给欧洲的 AI 拨款判了缓刑。第一次寒冬降临。</p></div>
+
+<div class="section"><div class="section-label">经过</div><p>1980 年代，AI 靠<strong>专家系统</strong>回暖：把某领域专家的判断编成成千上万条「如果…就…」规则。DEC 公司的 XCON 帮它配置 VAX 小型机订单，据称每年省下数千万美元；医疗诊断系统 MYCIN 也一度惊艳。产业界砸钱买 LISP 专用机。但泡沫脆弱：规则一多就互相打架，遇到规则外的情形便崩溃，且需要专家手工喂知识——<em>「知识获取瓶颈」</em>。1987 年 LISP 机市场崩盘，第二次寒冬到来。</p></div>
+
+<div class="section"><div class="section-label">反事实 + 历史学争论</div><div class="counter"><p>最尖锐的反事实：<strong>若 1969 年《感知机》没有把神经网络打入冷宫</strong>，Geoffrey Hinton 们的深度学习会不会提早二十年成熟？史界分歧（见 <em>Cade Metz《Genius Makers》(2021)</em>）：一派认为 Minsky 一本书扼杀了整条技术路线；另一派反驳——当时的算力与数据本就撑不起深度网络，寒冬是硬约束下的必然，不能全怪一本书。真相或许是：<em>方向没错，但时代的地基还没浇好</em>。</p></div></div>
+
+<div class="section"><div class="section-label">当下平行</div><p>专家系统的「知识获取瓶颈」，正是今天大模型试图绕过的老问题：<strong>与其让人把规则一条条写下，不如让机器从海量数据里自己长出规则</strong>。手写规则 vs 数据涌现，是同一道题的两代答案。</p></div>
+
+<div class="section"><div class="section-label">一句话教训 + 思考题</div><div class="lesson">一个想法「行不通」，常常只是「此刻的地基还不够」——被证伪的往往不是方向，而是时机。</div><div class="thought">你手上有没有一个曾被判定「行不通」的旧念头？当年挡住它的，是逻辑，还是仅仅是当时的算力、数据与成本？</div></div>
+</article>
+
+<!-- Event 3 -->
+<article class="event">
+<div class="event-num">EVENT · 03</div>
+<h2>AlphaGo 第 37 手：机器下出的「非人一手」<span class="en">AlphaGo vs Lee Sedol · 2016</span></h2>
+<span class="tag">2016.03</span><span class="tag">韩国·首尔</span><span class="tag">深度强化学习</span>
+
+<div class="section"><div class="section-label">背景与关键人物</div><p>围棋曾被视为 AI 的珠峰。棋盘有 10<sup>170</sup> 种局面，远超宇宙原子数，纯靠穷举无解——1997 年击败卡斯帕罗夫的「深蓝」那套暴力搜索在此失灵，高手靠的是说不清的「棋感」。DeepMind 的 <em>Demis Hassabis</em> 偏要碰它：把<strong>深度神经网络</strong>（评估局面）与<strong>蒙特卡洛树搜索</strong>结合，再让程序自我对弈数百万局，从胜负中反向学习。</p></div>
+
+<div class="section"><div class="section-label">经过</div><p>2016 年 3 月 9—15 日，AlphaGo 对阵世界顶尖棋手<em>李世石</em>，五番棋。第二局第 <strong>37 手</strong>，AlphaGo 在一个人类几乎不会考虑的位置落子——解说席一片错愕，职业棋手称「这不是人会下的棋」，事后却证明是妙手。最终 AlphaGo 以 4:1 取胜。李世石在第四局祭出神来一笔「第 78 手」扳回一城，成了人类对顶级 AI 的最后一胜之一。</p></div>
+
+<div class="section"><div class="section-label">反事实 + 历史学争论</div><div class="counter"><p>反事实：<strong>若李世石 4:1 获胜</strong>，深度强化学习的资本狂潮会不会推迟数年？争论点在于「第 37 手」的意义——它是机器<em>真的拥有了直觉</em>，还是只是把人类未曾探索的概率空间算得更透？<em>Melanie Mitchell《人工智能》(2019)</em>提醒：AlphaGo 惊艳，却对「围棋是什么、为何而下」一无所知；它精于一域，却不具备可迁移的常识。</p></div></div>
+
+<div class="section"><div class="section-label">当下平行</div><p>「机器给出人类想不到、却被验证更优的方案」正在扩散：AlphaFold 预测蛋白质结构、AI 设计新芯片布局。人机协同的真正价值，不是替代，而是<strong>拓展人类的搜索空间</strong>——让你看见自己视野之外的那一手。</p></div>
+
+<div class="section"><div class="section-label">一句话教训 + 思考题</div><div class="lesson">当机器下出「非人一手」，被冒犯的不是棋艺，而是「直觉唯人独有」这个信念。</div><div class="thought">在你的专业里，有没有一种你引以为傲的「直觉」，其实只是尚未被算法探明的概率空间？</div></div>
+</article>
+
+<!-- Event 4 -->
+<article class="event">
+<div class="event-num">EVENT · 04</div>
+<h2>ChatGPT：一次「低调预览」引爆的雪崩<span class="en">The ChatGPT Moment · 2022</span></h2>
+<span class="tag">2022.11.30</span><span class="tag">旧金山</span><span class="tag">大语言模型</span>
+
+<div class="section"><div class="section-label">背景与关键人物</div><p>2017 年，Google 团队发表《Attention Is All You Need》，提出 <strong>Transformer</strong> 架构——它让模型能并行处理长文本，是此后一切大模型的地基。OpenAI 沿此路线放大参数，2020 年造出 GPT-3。但原始 GPT-3 难以驾驭，答非所问。关键一步是 <strong>RLHF</strong>（基于人类反馈的强化学习）：用人类的偏好去校准模型，教它「听懂指令、好好说话」。</p></div>
+
+<div class="section"><div class="section-label">经过</div><p>2022 年 11 月 30 日，OpenAI 把这套能力包成一个对话框，作为「低调的研究预览」放出，内部原本预期反响平平。结果 <strong>5 天破百万用户，两个月破一亿</strong>——史上增长最快的消费级应用。普通人第一次能用自然语言直接调用 AI。技术早已存在数年，真正引爆的是那层「谁都会用」的界面。</p></div>
+
+<div class="section"><div class="section-label">反事实 + 历史学争论</div><div class="counter"><p>最耐人寻味的反事实：<strong>Google 手握 Transformer 与更早的对话模型 LaMDA，为何没有先发？</strong>因为大公司顾忌声誉风险——模型会胡说、会冒犯，这是典型的<em>创新者窘境</em>：既有霸主不敢用一个不完美的产品自毁招牌，反被无所顾忌的挑战者抢了身位。史界共识（呼应 Day 9 万维网）：ChatGPT 的胜负手不在模型多强，而在<strong>「免费、公开、人人可用」这一分发决策</strong>。</p></div></div>
+
+<div class="section"><div class="section-label">当下平行</div><p>这正是「AI 超级个体」的起点：当调用顶尖模型的门槛降到一个对话框，<strong>杠杆从组织下沉到了个人</strong>。历史上每一次通用工具平民化——印刷术、个人电脑、互联网——都重新分配了谁能创造。</p></div>
+
+<div class="section"><div class="section-label">一句话教训 + 思考题</div><div class="lesson">决定一项技术命运的，常常不是它有多强，而是谁敢第一个把它交到所有人手里。</div><div class="thought">你身边有没有一项「技术早已成熟、只差一个人人可用的界面」的能力？谁会是那个不顾声誉、先发制人的挑战者？</div></div>
+</article>
+
+<!-- 时间线 -->
+<section class="deep">
+<h3>AI 七十年脉络</h3>
+<div class="timeline">
+<div class="row"><span class="yr">1956</span><span class="ev">达特茅斯会议，「人工智能」诞生，符号主义登场</span></div>
+<div class="row"><span class="yr">1969</span><span class="ev">《感知机》重创神经网络，第一次寒冬临近</span></div>
+<div class="row"><span class="yr">1980s</span><span class="ev">专家系统商用回暖，随后 1987 年 LISP 机崩盘，第二次寒冬</span></div>
+<div class="row"><span class="yr">2012</span><span class="ev">AlexNet 引爆深度学习，连接主义翻身</span></div>
+<div class="row"><span class="yr">2016</span><span class="ev">AlphaGo 4:1 胜李世石</span></div>
+<div class="row"><span class="yr">2017</span><span class="ev">Transformer 架构问世</span></div>
+<div class="row"><span class="yr">2022</span><span class="ev">ChatGPT 发布，两月破亿用户</span></div>
+</div>
+</section>
+
+<!-- 深入思考 -->
+<section class="deep">
+<h3>深入思考</h3>
+
+<details><summary>问题一：符号主义与连接主义，是一场六十年的钟摆吗？</summary>
+<div>1956 年达特茅斯押注符号（写规则），1969 年打压神经网络；2012 年后连接主义（从数据学）全面翻盘。表面看是「数据战胜了规则」。但今天最前沿的探索又在把两者缝合——让大模型调用工具、遵守符号约束（神经符号 AI）。<strong>钟摆或许从不是二选一，而是每一代人只能抓住地基允许它抓住的那一端</strong>。判断当下的路线之争，先问：这一次，算力和数据把可能性的边界推到了哪里？</div></details>
+
+<details><summary>问题二：为什么 AI 史是「夏天—寒冬」的周期，而非平滑上升？（呼应 Day 7、Day 9 的长波）</summary>
+<div>Carlota Pérez 的技术革命框架在此同样适用：每次突破先引来资本与承诺的「安装期」泡沫，兑现不及预期便崩为寒冬，沉淀之后才进入务实的「部署期」。AI 的两次寒冬，本质是<strong>承诺的兑现速度追不上融资的燃烧速度</strong>。若这框架成立，当下的大模型热潮也逃不过一次挤泡沫——问题只是：这次的「地基」（算力、数据、资本）是否已厚到能扛住回调？</div></details>
+
+<details><summary>问题三：AlphaGo 的「直觉」与人的直觉，是同一种东西吗？</summary>
+<div>人类棋手的棋感来自有限对局中提炼的模式识别；AlphaGo 来自数百万局自我对弈的价值函数。二者都是「压缩经验、快速判断」，功能上相似。但差异在于：人的直觉嵌在意义之中（知道自己为何而下），机器的没有。这触及 BigCat 关注的意识问题——<strong>能力的相似，是否等于心智的相似？</strong>一个能算出妙手却不知「妙」为何物的系统，我们该如何为它的判断负责？</div></details>
+
+<details><summary>问题四：当调用智能的门槛降到零，稀缺的会是什么？</summary>
+<div>印刷术让文字复制的成本趋零，稀缺就从「抄写」转移到「值得印什么」；大模型让文本生成成本趋零，稀缺随之上移。当答案随手可得，<strong>提出好问题、判断答案对错、承担决策后果</strong>的能力反而更贵。「AI 超级个体」的真正杠杆，不在于会用工具，而在于保有机器暂时给不出的东西：品味、判断与责任。你正在把哪些判断力，不假思索地外包出去？</div></details>
+</section>
+
+<footer>BigCat · History · Day 10 · 2026.07.06</footer>
+
+</div></body></html>
