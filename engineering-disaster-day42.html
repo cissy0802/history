@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>历史：技术失败与灾难史 — Day 42</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Noto Serif SC","Songti SC",Georgia,"Times New Roman",serif;background:#ede6d8;color:#3a2e1f;line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 22px 70px}
+header{text-align:center;padding:60px 0 36px;border-bottom:2px double #a35d2b;margin-bottom:40px}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:4px;color:#a35d2b;background:#faf3e3;padding:5px 14px;border-radius:2px;border:1px solid #c69968;text-transform:uppercase;margin-bottom:18px}
+header h1{font-size:2.15rem;font-weight:800;color:#5a3a1e;letter-spacing:3px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#7a5e3a;font-style:italic}
+header .epigraph{margin-top:22px;font-size:0.95rem;color:#5a3a1e;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto;padding:14px 18px;border-left:3px solid #a35d2b;background:rgba(255,255,255,0.35);text-align:left}
+.event{background:#faf3e3;border-radius:4px;padding:34px 32px;margin-bottom:34px;box-shadow:0 2px 12px rgba(90,58,30,0.10);border-top:4px solid #a35d2b;position:relative}
+.event::before{content:"";position:absolute;top:-4px;left:0;right:0;height:4px;background:linear-gradient(90deg,#a35d2b 0%,#c69968 70%,transparent 100%)}
+.event-num{font-size:0.78rem;letter-spacing:3px;color:#a35d2b;font-weight:700;margin-bottom:6px}
+.event h2{font-size:1.5rem;color:#5a3a1e;font-weight:700;line-height:1.4;margin-bottom:10px}
+.event h2 .en{display:block;font-size:0.88rem;color:#7a5e3a;font-style:italic;font-weight:400;letter-spacing:0.5px;margin-top:4px}
+.tag{display:inline-block;font-size:0.78rem;color:#7a5e3a;background:#ede6d8;padding:3px 10px;border-radius:2px;margin-right:6px;margin-top:4px}
+.section{margin-top:20px}
+.section-label{font-size:0.82rem;font-weight:700;color:#a35d2b;letter-spacing:2px;margin-bottom:6px;padding-bottom:4px;border-bottom:1px dotted #c69968}
+.section p{font-size:0.97rem;color:#3a2e1f;text-align:justify}
+.section em{color:#5a3a1e;font-style:italic;font-weight:600}
+.counter{background:rgba(163,93,43,0.08);padding:14px 16px;border-left:3px solid #a35d2b;margin-top:8px;border-radius:0 4px 4px 0;font-size:0.96rem}
+.thought{background:rgba(198,153,104,0.18);padding:14px 16px;border-radius:3px;font-size:0.95rem;color:#5a3a1e}
+.thought::before{content:"❖ ";color:#a35d2b}
+.lesson{font-size:1rem;color:#5a3a1e;font-weight:600;padding:10px 14px;background:rgba(255,255,255,0.45);border-left:3px solid #c69968;margin-bottom:10px}
+.anatomy{background:#faf3e3;border-radius:4px;padding:26px 28px;margin-bottom:34px;box-shadow:0 2px 10px rgba(90,58,30,0.08);border-left:4px solid #a35d2b}
+.anatomy h3{font-size:1.15rem;color:#5a3a1e;margin-bottom:6px;letter-spacing:1.5px}
+.anatomy .cap{font-size:0.85rem;color:#7a5e3a;font-style:italic;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:150px 1fr 1.3fr;gap:0;font-size:0.88rem;border-top:1px solid #c69968}
+.grid>div{padding:9px 8px;border-bottom:1px solid #e0d3b8}
+.grid .hd{font-weight:700;color:#a35d2b;font-size:0.8rem;letter-spacing:1px;background:rgba(163,93,43,0.06)}
+.grid .emp{font-weight:700;color:#5a3a1e}
+.grid .trg{color:#7a5e3a}
+.grid .dis{color:#3a2e1f}
+.lag{margin-top:4px;border-top:1px solid #c69968}
+.lr{display:grid;grid-template-columns:112px 1fr 1.3fr;gap:12px;align-items:center;padding:11px 4px;border-bottom:1px solid #e0d3b8;font-size:0.88rem}
+.ll{font-weight:700;color:#5a3a1e}
+.lb{background:#e6ded0;height:11px;border-radius:6px;overflow:hidden}
+.lb span{display:block;height:100%;background:linear-gradient(90deg,#a35d2b,#c69968)}
+.ld{color:#7a5e3a}
+.deep{background:#faf3e3;border-radius:4px;padding:28px 30px;margin-bottom:30px;box-shadow:0 2px 10px rgba(90,58,30,0.08);border-left:4px solid #a35d2b}
+.deep h3{font-size:1.2rem;color:#5a3a1e;margin-bottom:14px;letter-spacing:1.5px}
+.deep details{margin:10px 0;padding:12px 16px;background:rgba(255,255,255,0.5);border-radius:3px;border-left:2px solid #c69968}
+.deep summary{cursor:pointer;font-weight:600;color:#5a3a1e;font-size:0.96rem}
+.deep details[open] summary{margin-bottom:8px}
+.deep details div{font-size:0.92rem;color:#3a2e1f;line-height:1.75;padding-top:4px;border-top:1px dotted #c69968}
+footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+.container{padding:16px 14px 40px}
+header{padding:40px 0 26px}
+header h1{font-size:1.55rem;letter-spacing:1.5px}
+.event{padding:24px 18px}
+.event h2{font-size:1.22rem}
+.section p{font-size:0.94rem}
+.grid{grid-template-columns:92px 1fr 1.15fr;font-size:0.8rem}
+.lr{grid-template-columns:1fr;gap:5px}
+}
+</style></head><body><div class="container">
+<header>
+<div class="week-tag">Day 42 · 技术失败与灾难史</div>
+<h1>灾难不在出事那天发生，它在很久之前就写好了</h1>
+<div class="meta">2026 年 8 月 8 日（周六） · BigCat's Time Machine</div>
+<div class="epigraph">一座桥、一艘船、一枚火箭、一座反应堆。四次事故的技术细节毫无共同点，调查却一次次指向同一件事：坏消息在组织里走得比故障慢。</div>
+</header>
+<!-- Event 1 -->
+<article class="event">
+<div class="event-num">EVENT · 01</div>
+<h2>唯一有权叫停的人，从没到过工地<span class="en">The Quebec Bridge Collapse · 29 August 1907</span></h2>
+<span class="tag">1907.08.29</span><span class="tag">魁北克 · 圣劳伦斯河</span><span class="tag">Royal Commission 1908 · Petroski</span>
+<div class="section"><div class="section-label">背景与关键人物</div><p><strong>Theodore Cooper</strong> 是当时北美最负盛名的桥梁工程师，合同给了他对魁北克大桥全部图纸的<strong>最终裁定权</strong>。他年近七十、健康不佳，整个工期只到过工地一次。为压低造价，主跨从 1600 英尺加长到 1800 英尺（549 米，当时世界最长悬臂跨），<strong>自重估算却没有重算</strong>；设计与施工同由 Phoenix Bridge 承担。</p></div>
+<div class="section"><div class="section-label">经过</div><p>1907 年 6 月起，驻场工程师 <strong>Norman McLure</strong> 反复报告南臂受压下弦杆肉眼可见地弯曲、且在扩大；Phoenix 坚称是运输时的旧变形，争论拖了两月。8 月 27 日 Cooper 从纽约发电报要求停止加载——<strong>这封电报没有变成停工令</strong>。8 月 29 日下午五点半，一万九千吨钢在十五秒内落进圣劳伦斯河，75 人死亡，其中 33 人是 Kahnawake 的莫霍克族铆工。</p></div>
+<div class="section"><div class="section-label">反事实 + 历史学争论</div><div class="counter"><p>1908 年皇家调查委员会认定 Cooper 与设计师 Peter Szlapka 的自重计算错误是直接原因。<strong>Henry Petroski</strong>《To Engineer Is Human》(1985) 读出更深一层：技术知识够用，缺的是<strong>制度</strong>——设计、施工、审核挤进同一家公司，否决权又交给一个只靠信件了解现场的人。约束很硬：<em>即使电报当天送达，工地也无人被授权停工。</em>加拿大此后确立强制独立复核。</p></div></div>
+<div class="section"><div class="section-label">当下平行</div><p>关键设计只由一位远程「架构师」签字，评审留在邮件里而非流程里；现场有疑虑却没有停线权。</p></div>
+<div class="section"><div class="section-label">一句话教训 + 思考题</div><div class="lesson">把否决权集中给最有经验的人、又不给现场任何人叫停权，等于让可靠性取决于一个人当天有没有收到信。</div><div class="thought">你的团队里，级别最低的人能不能让整件事停下来？成本由谁承担？</div></div>
+</article>
+<!-- Event 2 -->
+<article class="event">
+<div class="event-num">EVENT · 02</div>
+<h2>救生艇是够的——按 1894 年的规则算<span class="en">Titanic and the Board of Trade Rules · 14–15 April 1912</span></h2>
+<span class="tag">1912.04.14</span><span class="tag">北大西洋</span><span class="tag">Wreck Commissioner 1912 · SOLAS 1914</span>
+<div class="section"><div class="section-label">背景与关键人物</div><p>1894 年英国贸易委员会规定：一万吨以上的船配 16 艘救生艇。此后十八年规则未改，船越造越大。<strong>泰坦尼克号 46,328 总吨</strong>，配 20 艘艇、容量 1178 人，船上 2224 人——<em>它不但合规，还超出法定要求。</em>因为当时救生艇的模型不是「全员撤离」，而是把人摆渡到赶来的救援船。</p></div>
+<div class="section"><div class="section-label">经过</div><p>4 月 14 日船上至少收到六封冰情警报。23 时 40 分发现冰山，大副下令左满舵并倒车，撞击落在右舷前部，撕开约 90 米的间断损伤，<strong>前六个水密舱进水——设计余量是四个</strong>。舱壁只砌到 D、E 甲板且不封顶，水漫过隔断逐格灌入，2 时 20 分沉没，1500 余人遇难。</p></div>
+<div class="section"><div class="section-label">反事实 + 历史学争论</div><div class="counter"><p>流传最广的反事实是「迎头撞上去」：结构分析显示正撞可能只毁掉前两舱——物理上成立，决策上不成立，大副只有约 37 秒。<strong>真正可改的变量在十八年前</strong>：英美两国的调查都指向法规按吨位而非载客数计算救生艇。争论也在此分岔：一派归咎船长 Edward Smith 在冰区未减速，另一派指出当时北大西洋班轮<em>普遍如此</em>。1914 年首部《国际海上人命安全公约》(SOLAS) 随之要求救生艇容纳全部人员。</p></div></div>
+<div class="section"><div class="section-label">当下平行</div><p>合规 ≠ 安全：监管指标锁定的是上一代技术的失效方式。自动驾驶用「每千英里接管次数」评估安全、金融用历史波动率度量风险，都可能在合格线之上出事。</p></div>
+<div class="section"><div class="section-label">一句话教训 + 思考题</div><div class="lesson">最危险的事故常常发生在完全合规的系统里：规则编码的是上一代人对失效方式的想象。</div><div class="thought">你正在用的安全指标，是为哪一年的系统设计的？它假设的故障模式还成立吗？</div></div>
+</article>
+<!-- Event 3 -->
+<article class="event">
+<div class="event-num">EVENT · 03</div>
+<h2>「摘掉你的工程师帽子，戴上管理者的帽子」<span class="en">Challenger, STS-51-L · 28 January 1986</span></h2>
+<span class="tag">1986.01.28</span><span class="tag">卡纳维拉尔角</span><span class="tag">Rogers 委员会 · Vaughan · Feynman</span>
+<div class="section"><div class="section-label">背景与关键人物</div><p>航天飞机固体助推器的分段接缝靠两道 O 形密封圈封堵高温燃气。Morton Thiokol 的工程师 <strong>Roger Boisjoly</strong> 早在 1985 年 7 月就写下备忘录，警告接缝可能灾难性失效，低温会让橡胶变硬、回弹变慢。此前多次发射后，回收的助推器上都发现过 O 形圈被热气侵蚀——<strong>每次都判为「在可接受的经验范围内」</strong>。</p></div>
+<div class="section"><div class="section-label">经过</div><p>1 月 27 日夜佛罗里达遭遇寒潮，预报发射时约 2℃，此前最低的一次发射是 12℃。当晚电话会议上工程师建议推迟，NASA 的 <strong>Larry Mulloy</strong> 反问：「天哪，Thiokol，你们要我等到明年四月？」休会五分钟后，高管 Jerald Mason 对工程副总裁 Robert Lund 说：<strong>摘掉你的工程师帽子，戴上管理者的帽子。</strong>公司随即以管理层名义签字。次日 11 时 38 分升空，73 秒后解体，七人遇难。听证会上 <strong>Richard Feynman</strong> 把一段 O 形圈按进冰水，取出后不再回弹；他在附录 F 中写道：管理层估计的失败率是十万分之一，工程师的估计是百分之一。</p></div>
+<div class="section"><div class="section-label">反事实 + 历史学争论</div><div class="counter"><p><strong>Diane Vaughan</strong>《The Challenger Launch Decision》(1996) 推翻了「管理层明知故犯」的通俗版本。她的核心概念是<strong>偏差的正常化</strong>：没有人隐瞒数据，NASA 逐次把「侵蚀但没炸」当作仍在裕度内的证据，标准在十年里缓慢下移。<strong>Edward Tufte</strong> 归咎于呈现方式：当晚的图表按发射编号而非温度排序；Vaughan 反驳说那条曲线是知道答案后才画得出来的。硬约束在于：<em>推迟一次发射并不能修好接缝设计。</em></p></div></div>
+<div class="section"><div class="section-label">当下平行</div><p>SRE 的告警疲劳：每次 near-miss 被记为「没出事」，容忍阈值就抬高一格，而裕度被消耗的过程不触发任何报警。</p></div>
+<div class="section"><div class="section-label">一句话教训 + 思考题</div><div class="lesson">组织很少毁于一个错误的决定，而是毁于一连串「上次也没事」的合理化。</div><div class="thought">你手上有没有一个反复出现、每次都被判为「可接受」的异常？判定标准是什么时候悄悄放宽的？</div></div>
+</article>
+<!-- Event 4 -->
+<article class="event">
+<div class="event-num">EVENT · 04</div>
+<h2>缺陷已知十一年，只是被列为机密<span class="en">Chernobyl Reactor No. 4 · 26 April 1986</span></h2>
+<span class="tag">1986.04.26</span><span class="tag">普里皮亚季 · 乌克兰</span><span class="tag">INSAG-1 (1986) · INSAG-7 (1992) · Plokhy</span>
+<div class="section"><div class="section-label">背景与关键人物</div><p>苏联 RBMK-1000 石墨慢化沸水堆有两个致命特性：<strong>正空泡系数</strong>——冷却水沸腾成蒸汽后反应性反而上升，形成正反馈；控制棒下端接着石墨尖端，插入初期先<strong>增加</strong>反应性。1975 年列宁格勒核电站一号机组已因前者部分燃料熔毁，<strong>事故报告被列为机密</strong>，其他电站的运行人员一无所知。</p></div>
+<div class="section"><div class="section-label">经过</div><p>1986 年 4 月，四号机组要在停堆前补做一项拖了数年的测试。25 日基辅电网要求供电，测试推迟十小时，交给<strong>没有受过该测试训练的夜班</strong>。降功率中氙-135 积累，功率意外跌到 30 兆瓦热功率，远低于计划的 700；按规程此时应终止，副总工程师 <strong>Anatoly Dyatlov</strong> 要求继续，操作员抽出大量控制棒把功率拉回 200 兆瓦——<strong>堆芯已进入规程明令禁止的状态</strong>。1 时 23 分 04 秒测试开始，冷却水沸腾，正空泡系数自我放大；36 秒后按下紧急停堆按钮 AZ-5，石墨尖端率先入堆，把反应性又推高一截。两次爆炸掀掉一千吨顶盖，31 人死于当场或急性辐射病。</p></div>
+<div class="section"><div class="section-label">反事实 + 历史学争论</div><div class="counter"><p>国际原子能机构 1986 年的 INSAG-1 报告基本归咎于操作员；1992 年的 <strong>INSAG-7</strong> 大幅修正：设计缺陷才是主因，操作员在不知情下进入了反应堆本不该允许的状态。<strong>Serhii Plokhy</strong>《Chernobyl》(2018) 把根因再推一层——<strong>保密切断了组织学习</strong>：1975 年的教训若公开，规程与控制棒设计有十一年可以改。硬约束也在：苏联选 RBMK，是因为它可不停堆换料、且不需大型压力容器的锻造能力——<em>安全性的劣势是工业条件下的自觉取舍，不是疏忽。</em></p></div></div>
+<div class="section"><div class="section-label">当下平行</div><p>民航业是反向样本：事故报告全球公开、匿名上报让一次教训在全行业生效。安全事件不外传的行业里，每家公司都得自己把所有坑踩一遍。</p></div>
+<div class="section"><div class="section-label">一句话教训 + 思考题</div><div class="lesson">一个系统真实的安全水位，等于它允许坏消息传播的距离。</div><div class="thought">你所在的组织，最近一次故障复盘传到了多远？只在小组内，还是没踩过坑的人也看到了？</div></div>
+</article>
+<!-- 预警滞后 -->
+<section class="anatomy">
+<h3>预警到灾难的间隔</h3>
+<div class="cap">四场事故都不缺预警，缺的是让预警变成行动的通道。</div>
+<div class="lag">
+<div class="lr"><div class="ll">魁北克桥</div><div class="lb"><span style="width:5%"></span></div><div class="ld">下弦杆变形上报 → 坍塌：<strong>约 10 周</strong></div></div>
+<div class="lr"><div class="ll">泰坦尼克</div><div class="lb"><span style="width:100%"></span></div><div class="ld">救生艇规则定稿 → 沉没：<strong>18 年</strong></div></div>
+<div class="lr"><div class="ll">挑战者号</div><div class="lb"><span style="width:8%"></span></div><div class="ld">Boisjoly 备忘录 → 解体：<strong>6 个月</strong></div></div>
+<div class="lr"><div class="ll">切尔诺贝利</div><div class="lb"><span style="width:62%"></span></div><div class="ld">列宁格勒事故 → 爆炸：<strong>11 年</strong></div></div>
+</div>
+</section>
+<!-- Anatomy -->
+<section class="anatomy">
+<h3>四场事故，四条被切断的回路</h3>
+<div class="cap">通常的解释讲个人：谁算错了、谁太傲慢。真正起作用的是回路。</div>
+<div class="grid">
+<div class="hd">现场 / 年代</div><div class="hd">通常的解释</div><div class="hd">真正的机制</div>
+<div class="emp">魁北克桥 · 1907</div><div class="trg">工程师算错了自重</div><div class="dis">设计施工同体、审核单点远程，复核回路名存实亡</div>
+<div class="emp">泰坦尼克 · 1912</div><div class="trg">傲慢与救生艇不足</div><div class="dis">规则编码了过时的失效模型，合规反成盲区</div>
+<div class="emp">挑战者号 · 1986</div><div class="trg">管理层压过了工程师</div><div class="dis">偏差正常化：把「没出事」当作安全的证据</div>
+<div class="emp">切尔诺贝利 · 1986</div><div class="trg">操作员违规操作</div><div class="dis">保密切断跨组织学习，已知缺陷十一年未修</div>
+</div>
+</section>
+<!-- 深入思考 -->
+<section class="deep">
+<h3>深入思考</h3>
+<details><summary>问题一：四条回路里，哪一条最难在自己的组织中修好？</summary>
+<div>停工权最容易写进制度，也最容易失效——行使它的人承担全部延误成本，避免的损失却看不见。更难的是<strong>跨组织学习</strong>：它要求把丑事告诉竞争对手。民航业做到了，因为一次坠机打击的是整个行业的信心。<strong>事故只损害单家企业声誉的行业，信息共享不会自发出现，只能靠强制。</strong></div></details>
+<details><summary>问题二：Vaughan 的「偏差正常化」与 Tufte 的「图表没画对」，哪个更适合当行动指南？</summary>
+<div>Tufte 的处方具体——按物理变量而非时间序号组织证据，但有事后诸葛的风险。Vaughan 的诊断更普适：把每次「异常但无后果」记为<strong>裕度消耗</strong>而非安全证据，给每类异常设累计触发线，达到就必须重新论证设计。<strong>记账方式比单次判断重要。</strong></div></details>
+<details><summary>问题三：这四次失败对复杂系统有什么一般性启示？</summary>
+<div>Charles Perrow《Normal Accidents》(1984) 认为，系统兼具<strong>交互复杂性</strong>与<strong>紧耦合</strong>时，事故是正常产物而非例外；Weick 与 Sutcliffe 的高可靠性组织理论反驳：航母甲板与空管在同样条件下长期不出事，靠的是对微弱信号的执着与决策权下沉。四个案例更支持后者——每处失效都能指认一条本可存在的回路。<strong>这与分布式系统的直觉一致：决定命运的是隔离边界与回滚路径，而非单个组件多可靠。</strong>另一个推论值得警惕：安全规则几乎全是追认式的，还没出过大事的领域，规则也还没被写出来。</div></details>
+</section>
+<footer>BigCat · History · Day 42 · 2026.08.08</footer>
+</div></body></html>

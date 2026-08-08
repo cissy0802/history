@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>History: Failures &amp; Disasters of Technology — Day 42</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Noto Serif SC","Songti SC",Georgia,"Times New Roman",serif;background:#ede6d8;color:#3a2e1f;line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 22px 70px}
+header{text-align:center;padding:60px 0 36px;border-bottom:2px double #a35d2b;margin-bottom:40px}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:4px;color:#a35d2b;background:#faf3e3;padding:5px 14px;border-radius:2px;border:1px solid #c69968;text-transform:uppercase;margin-bottom:18px}
+header h1{font-size:2.15rem;font-weight:800;color:#5a3a1e;letter-spacing:3px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#7a5e3a;font-style:italic}
+header .epigraph{margin-top:22px;font-size:0.95rem;color:#5a3a1e;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto;padding:14px 18px;border-left:3px solid #a35d2b;background:rgba(255,255,255,0.35);text-align:left}
+.event{background:#faf3e3;border-radius:4px;padding:34px 32px;margin-bottom:34px;box-shadow:0 2px 12px rgba(90,58,30,0.10);border-top:4px solid #a35d2b;position:relative}
+.event::before{content:"";position:absolute;top:-4px;left:0;right:0;height:4px;background:linear-gradient(90deg,#a35d2b 0%,#c69968 70%,transparent 100%)}
+.event-num{font-size:0.78rem;letter-spacing:3px;color:#a35d2b;font-weight:700;margin-bottom:6px}
+.event h2{font-size:1.5rem;color:#5a3a1e;font-weight:700;line-height:1.4;margin-bottom:10px}
+.event h2 .en{display:block;font-size:0.88rem;color:#7a5e3a;font-style:italic;font-weight:400;letter-spacing:0.5px;margin-top:4px}
+.tag{display:inline-block;font-size:0.78rem;color:#7a5e3a;background:#ede6d8;padding:3px 10px;border-radius:2px;margin-right:6px;margin-top:4px}
+.section{margin-top:20px}
+.section-label{font-size:0.82rem;font-weight:700;color:#a35d2b;letter-spacing:2px;margin-bottom:6px;padding-bottom:4px;border-bottom:1px dotted #c69968}
+.section p{font-size:0.97rem;color:#3a2e1f;text-align:justify}
+.section em{color:#5a3a1e;font-style:italic;font-weight:600}
+.counter{background:rgba(163,93,43,0.08);padding:14px 16px;border-left:3px solid #a35d2b;margin-top:8px;border-radius:0 4px 4px 0;font-size:0.96rem}
+.thought{background:rgba(198,153,104,0.18);padding:14px 16px;border-radius:3px;font-size:0.95rem;color:#5a3a1e}
+.thought::before{content:"❖ ";color:#a35d2b}
+.lesson{font-size:1rem;color:#5a3a1e;font-weight:600;padding:10px 14px;background:rgba(255,255,255,0.45);border-left:3px solid #c69968;margin-bottom:10px}
+.anatomy{background:#faf3e3;border-radius:4px;padding:26px 28px;margin-bottom:34px;box-shadow:0 2px 10px rgba(90,58,30,0.08);border-left:4px solid #a35d2b}
+.anatomy h3{font-size:1.15rem;color:#5a3a1e;margin-bottom:6px;letter-spacing:1.5px}
+.anatomy .cap{font-size:0.85rem;color:#7a5e3a;font-style:italic;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:150px 1fr 1.3fr;gap:0;font-size:0.88rem;border-top:1px solid #c69968}
+.grid>div{padding:9px 8px;border-bottom:1px solid #e0d3b8}
+.grid .hd{font-weight:700;color:#a35d2b;font-size:0.8rem;letter-spacing:1px;background:rgba(163,93,43,0.06)}
+.grid .emp{font-weight:700;color:#5a3a1e}
+.grid .trg{color:#7a5e3a}
+.grid .dis{color:#3a2e1f}
+.lag{margin-top:4px;border-top:1px solid #c69968}
+.lr{display:grid;grid-template-columns:112px 1fr 1.3fr;gap:12px;align-items:center;padding:11px 4px;border-bottom:1px solid #e0d3b8;font-size:0.88rem}
+.ll{font-weight:700;color:#5a3a1e}
+.lb{background:#e6ded0;height:11px;border-radius:6px;overflow:hidden}
+.lb span{display:block;height:100%;background:linear-gradient(90deg,#a35d2b,#c69968)}
+.ld{color:#7a5e3a}
+.deep{background:#faf3e3;border-radius:4px;padding:28px 30px;margin-bottom:30px;box-shadow:0 2px 10px rgba(90,58,30,0.08);border-left:4px solid #a35d2b}
+.deep h3{font-size:1.2rem;color:#5a3a1e;margin-bottom:14px;letter-spacing:1.5px}
+.deep details{margin:10px 0;padding:12px 16px;background:rgba(255,255,255,0.5);border-radius:3px;border-left:2px solid #c69968}
+.deep summary{cursor:pointer;font-weight:600;color:#5a3a1e;font-size:0.96rem}
+.deep details[open] summary{margin-bottom:8px}
+.deep details div{font-size:0.92rem;color:#3a2e1f;line-height:1.75;padding-top:4px;border-top:1px dotted #c69968}
+footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+.container{padding:16px 14px 40px}
+header{padding:40px 0 26px}
+header h1{font-size:1.55rem;letter-spacing:1.5px}
+.event{padding:24px 18px}
+.event h2{font-size:1.22rem}
+.section p{font-size:0.94rem}
+.grid{grid-template-columns:92px 1fr 1.15fr;font-size:0.8rem}
+.lr{grid-template-columns:1fr;gap:5px}
+}
+</style></head><body><div class="container">
+<header>
+<div class="week-tag">Day 42 · Failures &amp; Disasters of Technology</div>
+<h1>A disaster does not happen on the day it happens. It was written long before.</h1>
+<div class="meta">8 August 2026 (Saturday) · BigCat's Time Machine</div>
+<div class="epigraph">A bridge, a ship, a rocket, a reactor. The four accidents share no technical details at all, yet the inquiries keep arriving at the same finding: inside an organisation, bad news travels slower than the fault does.</div>
+</header>
+<!-- Event 1 -->
+<article class="event">
+<div class="event-num">EVENT · 01</div>
+<h2>The only man empowered to stop the work never visited the site<span class="en">The Quebec Bridge Collapse · 29 August 1907</span></h2>
+<span class="tag">29 Aug 1907</span><span class="tag">Quebec · St. Lawrence River</span><span class="tag">Royal Commission 1908 · Petroski</span>
+<div class="section"><div class="section-label">Background &amp; key figures</div><p><strong>Theodore Cooper</strong> was the most celebrated bridge engineer in North America, and his contract gave him <strong>final authority</strong> over every drawing of the Quebec Bridge. He was nearly seventy, in poor health, and visited the site exactly once during the entire build. To cut costs the main span was stretched from 1,600 to 1,800 feet (549 m, the longest cantilever span in the world at the time) — <strong>and the dead-load estimate was never recalculated</strong>. Design and construction both sat with a single firm, Phoenix Bridge.</p></div>
+<div class="section"><div class="section-label">What happened</div><p>From June 1907 the resident engineer <strong>Norman McLure</strong> reported repeatedly that compression chords on the south arm were visibly bent, and the bend was growing; Phoenix insisted it was old deformation from shipping. The argument dragged on for two months. On 27 August Cooper wired from New York to add no further load — <strong>the telegram never became a stop-work order</strong>. At half past five on 29 August, nineteen thousand tons of steel fell into the St. Lawrence in fifteen seconds. Seventy-five men died, thirty-three of them Mohawk ironworkers from Kahnawake.</p></div>
+<div class="section"><div class="section-label">Counterfactual &amp; historiographical debate</div><div class="counter"><p>The 1908 Royal Commission found the dead-load error by Cooper and the designer Peter Szlapka to be the direct cause. <strong>Henry Petroski</strong> (<em>To Engineer Is Human</em>, 1985) reads a deeper layer: the technical knowledge was adequate; what was missing was <strong>institutional structure</strong> — design, construction and review compressed into one firm, with the veto handed to a man who knew the site only through letters. The constraint is hard: <em>even if the telegram had arrived that morning, nobody on site was authorised to halt the work.</em> Canada afterwards made independent external review mandatory on major works.</p></div></div>
+<div class="section"><div class="section-label">Modern parallel</div><p>A critical design signed off by one remote "architect", with the review living in an email thread rather than in a process; a floor where doubts exist but nobody holds the right to stop the line.</p></div>
+<div class="section"><div class="section-label">One-line lesson + question</div><div class="lesson">Concentrating the veto in the most experienced person while giving no one on site the right to stop makes system reliability depend on whether one man happened to get his mail that day.</div><div class="thought">In your team, can the most junior person bring everything to a halt? Who absorbs the cost when they do?</div></div>
+</article>
+<!-- Event 2 -->
+<article class="event">
+<div class="event-num">EVENT · 02</div>
+<h2>There were enough lifeboats — by the rules of 1894<span class="en">Titanic and the Board of Trade Rules · 14–15 April 1912</span></h2>
+<span class="tag">14 Apr 1912</span><span class="tag">North Atlantic</span><span class="tag">Wreck Commissioner 1912 · SOLAS 1914</span>
+<div class="section"><div class="section-label">Background &amp; key figures</div><p>In 1894 the British Board of Trade required ships above ten thousand tons to carry sixteen lifeboats. The rule went unchanged for eighteen years while ships kept growing. <strong>Titanic measured 46,328 gross tons</strong>, carried twenty boats with capacity for 1,178, and had 2,224 people aboard — <em>she was not merely compliant, she exceeded the legal minimum.</em> The reason is that lifeboats were not modelled for full evacuation at all, but for ferrying people to a rescue ship coming alongside.</p></div>
+<div class="section"><div class="section-label">What happened</div><p>On 14 April the ship received at least six ice warnings. At 23:40 the berg was sighted; the officer ordered hard-a-port and engines astern. The impact fell along the starboard bow, opening roughly 90 metres of intermittent damage and <strong>flooding six watertight compartments — the design margin was four</strong>. The bulkheads rose only to D and E decks and were not capped, so water spilled over each divider in turn. She sank at 02:20; more than 1,500 died.</p></div>
+<div class="section"><div class="section-label">Counterfactual &amp; historiographical debate</div><div class="counter"><p>The most popular counterfactual is ramming the berg head-on: structural analysis suggests a bow-first collision might have destroyed only the first two compartments. Physically plausible, decisionally impossible — the officer had about 37 seconds. <strong>The variable that could really have been changed sat eighteen years earlier</strong>: both the British and American inquiries pointed to lifeboat requirements scaled by tonnage rather than by passengers carried. The debate forks here: one camp blames Captain Edward Smith for not slowing in an ice field, another notes that <em>every North Atlantic liner then did the same</em>. The first SOLAS convention of 1914 followed, requiring lifeboat capacity for everyone aboard.</p></div></div>
+<div class="section"><div class="section-label">Modern parallel</div><p>Compliant ≠ safe: regulatory metrics lock in the previous generation's failure modes. Autonomous driving judged by disengagements per thousand miles, and finance measuring risk by historical volatility, can both fail well above the passing line.</p></div>
+<div class="section"><div class="section-label">One-line lesson + question</div><div class="lesson">The most dangerous accidents often occur inside fully compliant systems: the rules encode the previous generation's imagination of how things fail.</div><div class="thought">The safety metric you rely on — which year's system was it designed for? Does the failure mode it assumes still hold?</div></div>
+</article>
+<!-- Event 3 -->
+<article class="event">
+<div class="event-num">EVENT · 03</div>
+<h2>"Take off your engineering hat and put on your management hat"<span class="en">Challenger, STS-51-L · 28 January 1986</span></h2>
+<span class="tag">28 Jan 1986</span><span class="tag">Cape Canaveral</span><span class="tag">Rogers Commission · Vaughan · Feynman</span>
+<div class="section"><div class="section-label">Background &amp; key figures</div><p>The segmented joints of the shuttle's solid rocket boosters were sealed against hot gas by two O-rings. <strong>Roger Boisjoly</strong>, an engineer at contractor Morton Thiokol, had written a memo in July 1985 warning that the joint could fail catastrophically, and that cold stiffens the rubber and slows its rebound. Recovered boosters from earlier flights repeatedly showed O-ring erosion by hot gas — <strong>each time judged to be "within the acceptable range of experience."</strong></p></div>
+<div class="section"><div class="section-label">What happened</div><p>On the night of 27 January a cold front hit Florida; launch temperature was forecast at about 2℃, against a previous coldest launch of 12℃. On the teleconference the engineers recommended delay. NASA's <strong>Larry Mulloy</strong> shot back: "My God, Thiokol, when do you want me to launch — next April?" After a five-minute caucus, executive Jerald Mason told engineering vice-president Robert Lund: <strong>take off your engineering hat and put on your management hat.</strong> The company then signed off under management's name. Liftoff came at 11:38 the next morning; the vehicle broke apart 73 seconds later, killing all seven. At the hearings <strong>Richard Feynman</strong> pressed a piece of O-ring into ice water and it failed to spring back. In Appendix F he recorded another number: management put the odds of failure at one in a hundred thousand, working engineers at one in a hundred.</p></div>
+<div class="section"><div class="section-label">Counterfactual &amp; historiographical debate</div><div class="counter"><p><strong>Diane Vaughan</strong>'s <em>The Challenger Launch Decision</em> (1996) demolished the popular story of managers knowingly gambling. Her central concept is the <strong>normalisation of deviance</strong>: nobody suppressed data; NASA repeatedly treated "eroded but did not explode" as evidence the system was still inside its margin, and the standard drifted downward across a decade. <strong>Edward Tufte</strong> blamed presentation instead: the charts that night were ordered by flight number rather than temperature. Vaughan's reply is that the revealing curve can only be drawn once you know the answer. The hard constraint remains: <em>delaying one launch would not have fixed the joint design.</em></p></div></div>
+<div class="section"><div class="section-label">Modern parallel</div><p>Alert fatigue in SRE practice: each near-miss logged as "nothing happened" ratchets the tolerance up a notch, and the consumption of margin fires no alarm of its own.</p></div>
+<div class="section"><div class="section-label">One-line lesson + question</div><div class="lesson">Organisations are rarely destroyed by one wrong decision. They are destroyed by a run of rationalisations that begin "it was fine last time."</div><div class="thought">Is there an anomaly on your watch that keeps recurring and keeps being ruled acceptable? When exactly did the threshold quietly loosen?</div></div>
+</article>
+<!-- Event 4 -->
+<article class="event">
+<div class="event-num">EVENT · 04</div>
+<h2>The flaw had been known for eleven years — and classified<span class="en">Chernobyl Reactor No. 4 · 26 April 1986</span></h2>
+<span class="tag">26 Apr 1986</span><span class="tag">Pripyat · Ukraine</span><span class="tag">INSAG-1 (1986) · INSAG-7 (1992) · Plokhy</span>
+<div class="section"><div class="section-label">Background &amp; key figures</div><p>The Soviet RBMK-1000 graphite-moderated boiling-water reactor had two lethal properties: a <strong>positive void coefficient</strong> — when coolant boils into steam, reactivity rises rather than falls, a positive feedback loop — and control rods tipped with graphite, so that the first stage of insertion <strong>increases</strong> reactivity. In 1975 Unit 1 at the Leningrad plant had already suffered partial fuel melting from the first of these. <strong>The accident report was classified</strong>, and operators at other stations knew nothing of it.</p></div>
+<div class="section"><div class="section-label">What happened</div><p>In April 1986 Unit 4 was to complete a test postponed for years before shutdown. On the 25th the Kyiv grid called for power, delaying the test ten hours and handing it to a <strong>night shift untrained for it</strong>. During the power reduction xenon-135 built up and output fell unexpectedly to 30 MW thermal, far below the planned 700. Procedure required abandoning the test; deputy chief engineer <strong>Anatoly Dyatlov</strong> ordered it continued, and operators withdrew a great many control rods to drag output back to 200 MW — <strong>the core was now in a state the procedures expressly forbade</strong>. The test began at 01:23:04; coolant boiled and the positive void coefficient amplified itself. Thirty-six seconds later the AZ-5 emergency scram was pressed, the graphite tips entered first, and reactivity rose another step. Two explosions lifted a thousand-ton lid. Thirty-one died at the scene or of acute radiation sickness.</p></div>
+<div class="section"><div class="section-label">Counterfactual &amp; historiographical debate</div><div class="counter"><p>The IAEA's INSAG-1 report of 1986 blamed the operators; the 1992 <strong>INSAG-7</strong> revised that sharply: design flaws were the primary cause, and the operators had entered, unknowingly, a state the reactor should never have permitted. <strong>Serhii Plokhy</strong> (<em>Chernobyl</em>, 2018) pushes the root cause one level higher — <strong>secrecy severed organisational learning</strong>: had the 1975 lesson been published, procedures and rod design had eleven years in which to change. A hard constraint also applies: the USSR chose the RBMK because it could be refuelled online and required no heavy pressure-vessel forging industry — <em>its safety deficit was a deliberate trade under industrial constraints, not an oversight.</em></p></div></div>
+<div class="section"><div class="section-label">Modern parallel</div><p>Civil aviation is the inverse case: accident reports published worldwide and anonymous reporting make one lesson binding across the whole industry. Where safety incidents stay in-house, every firm must fall into every hole itself.</p></div>
+<div class="section"><div class="section-label">One-line lesson + question</div><div class="lesson">A system's true safety level equals the distance it lets bad news travel.</div><div class="thought">How far did your organisation's last incident review actually reach? Only the team, or also the people who have never hit that particular hole?</div></div>
+</article>
+<!-- Warning lag -->
+<section class="anatomy">
+<h3>The gap between the warning and the disaster</h3>
+<div class="cap">None of the four lacked a warning. What was missing was a channel that turned warnings into action.</div>
+<div class="lag">
+<div class="lr"><div class="ll">Quebec Bridge</div><div class="lb"><span style="width:5%"></span></div><div class="ld">bent chord reported → collapse: <strong>about 10 weeks</strong></div></div>
+<div class="lr"><div class="ll">Titanic</div><div class="lb"><span style="width:100%"></span></div><div class="ld">lifeboat rule finalised → sinking: <strong>18 years</strong></div></div>
+<div class="lr"><div class="ll">Challenger</div><div class="lb"><span style="width:8%"></span></div><div class="ld">Boisjoly memo → break-up: <strong>6 months</strong></div></div>
+<div class="lr"><div class="ll">Chernobyl</div><div class="lb"><span style="width:62%"></span></div><div class="ld">Leningrad accident → explosion: <strong>11 years</strong></div></div>
+</div>
+</section>
+<!-- Anatomy -->
+<section class="anatomy">
+<h3>Four accidents, four severed loops</h3>
+<div class="cap">The usual account is about individuals: who miscalculated, who was arrogant. What actually operates is the loop.</div>
+<div class="grid">
+<div class="hd">Case / year</div><div class="hd">The usual account</div><div class="hd">The actual mechanism</div>
+<div class="emp">Quebec Bridge · 1907</div><div class="trg">the engineer got the dead load wrong</div><div class="dis">design and build in one firm, review remote and single-point: the check loop existed only on paper</div>
+<div class="emp">Titanic · 1912</div><div class="trg">arrogance and too few lifeboats</div><div class="dis">rules encoding an obsolete failure model, so compliance itself became the blind spot</div>
+<div class="emp">Challenger · 1986</div><div class="trg">management overruled the engineers</div><div class="dis">normalisation of deviance: "nothing happened" taken as evidence of safety</div>
+<div class="emp">Chernobyl · 1986</div><div class="trg">the operators broke the rules</div><div class="dis">secrecy cut cross-organisational learning; a known flaw went eleven years unfixed</div>
+</div>
+</section>
+<!-- Deeper reflection -->
+<section class="deep">
+<h3>Deeper reflection</h3>
+<details><summary>Question 1: Of the four loops, which is hardest to repair in your own organisation?</summary>
+<div>The right to stop work is the easiest to write into policy and the easiest to lose in practice — whoever exercises it bears the whole cost of delay, while the losses avoided are never visible. Harder still is <strong>cross-organisational learning</strong>: it requires telling your competitors about your own embarrassments. Aviation manages it because a single crash damages confidence in the entire industry. <strong>Where an accident only harms one firm's reputation, information sharing will not emerge on its own; it has to be compelled.</strong></div></details>
+<details><summary>Question 2: Vaughan's "normalisation of deviance" or Tufte's "the chart was drawn wrong" — which is the better guide to action?</summary>
+<div>Tufte's prescription is concrete — organise evidence by physical variable rather than by sequence number — but it carries the risk of hindsight. Vaughan's diagnosis generalises better: record every "anomaly without consequence" as <strong>margin consumed</strong> rather than as evidence of safety, and set a cumulative trigger per anomaly class, after which the design must be re-argued rather than the individual case re-assessed. <strong>The accounting method matters more than any single judgement.</strong></div></details>
+<details><summary>Question 3: What do these four failures say about complex systems in general?</summary>
+<div>Charles Perrow (<em>Normal Accidents</em>, 1984) argued that when a system combines <strong>interactive complexity</strong> with <strong>tight coupling</strong>, accidents are a normal product rather than an exception; the high-reliability organisation theory of Weick and Sutcliffe answers that carrier decks and air traffic control stay accident-free under the same conditions through preoccupation with weak signals and deference to expertise at the front line. The four cases favour the latter — each failure points to a loop that could have existed. <strong>This matches the distributed-systems intuition: what decides the outcome is the isolation boundary and the rollback path, not how reliable any single component is.</strong> One further inference deserves caution: safety rules are almost entirely retrospective, so a field that has not yet had its disaster has not yet had its rules written.</div></details>
+</section>
+<footer>BigCat · History · Day 42 · 2026.08.08</footer>
+</div></body></html>
