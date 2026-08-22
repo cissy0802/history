@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>历史：身体的历史 — Day 56</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Noto Serif SC","Songti SC",Georgia,"Times New Roman",serif;background:#ede6d8;color:#3a2e1f;line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 22px 70px}
+header{text-align:center;padding:60px 0 36px;border-bottom:2px double #a35d2b;margin-bottom:40px}
+header .week-tag{display:inline-block;font-size:0.78rem;letter-spacing:4px;color:#a35d2b;background:#faf3e3;padding:5px 14px;border-radius:2px;border:1px solid #c69968;text-transform:uppercase;margin-bottom:18px}
+header h1{font-size:2.15rem;font-weight:800;color:#5a3a1e;letter-spacing:3px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#7a5e3a;font-style:italic}
+header .epigraph{margin-top:22px;font-size:0.95rem;color:#5a3a1e;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto;padding:14px 18px;border-left:3px solid #a35d2b;background:rgba(255,255,255,0.35);text-align:left}
+.event{background:#faf3e3;border-radius:4px;padding:34px 32px;margin-bottom:34px;box-shadow:0 2px 12px rgba(90,58,30,0.10);border-top:4px solid #a35d2b;position:relative}
+.event::before{content:"";position:absolute;top:-4px;left:0;right:0;height:4px;background:linear-gradient(90deg,#a35d2b 0%,#c69968 70%,transparent 100%)}
+.event-num{font-size:0.78rem;letter-spacing:3px;color:#a35d2b;font-weight:700;margin-bottom:6px}
+.event h2{font-size:1.5rem;color:#5a3a1e;font-weight:700;line-height:1.4;margin-bottom:10px}
+.event h2 .en{display:block;font-size:0.88rem;color:#7a5e3a;font-style:italic;font-weight:400;letter-spacing:0.5px;margin-top:4px}
+.tag{display:inline-block;font-size:0.78rem;color:#7a5e3a;background:#ede6d8;padding:3px 10px;border-radius:2px;margin-right:6px;margin-top:4px}
+.section{margin-top:20px}
+.section-label{font-size:0.82rem;font-weight:700;color:#a35d2b;letter-spacing:2px;margin-bottom:6px;padding-bottom:4px;border-bottom:1px dotted #c69968}
+.section p{font-size:0.97rem;color:#3a2e1f;text-align:justify}
+.section em{color:#5a3a1e;font-style:italic;font-weight:600}
+.counter{background:rgba(163,93,43,0.08);padding:14px 16px;border-left:3px solid #a35d2b;margin-top:8px;border-radius:0 4px 4px 0;font-size:0.96rem}
+.thought{background:rgba(198,153,104,0.18);padding:14px 16px;border-radius:3px;font-size:0.95rem;color:#5a3a1e}
+.thought::before{content:"❖ ";color:#a35d2b}
+.lesson{font-size:1rem;color:#5a3a1e;font-weight:600;padding:10px 14px;background:rgba(255,255,255,0.45);border-left:3px solid #c69968;margin-bottom:10px}
+.chart{margin-top:14px;background:rgba(255,255,255,0.45);border-radius:3px;padding:14px 16px}
+.chart .cr{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:0.86rem}
+.chart .cl{flex:0 0 140px;color:#5a3a1e}
+.chart .cb{height:13px;background:linear-gradient(90deg,#a35d2b,#c69968);border-radius:2px}
+.chart .cv{color:#7a5e3a;font-size:0.82rem;white-space:nowrap}
+.chart .cap{font-size:0.83rem;color:#7a5e3a;margin-top:10px;font-style:italic;line-height:1.7}
+.timeline{margin:26px 0 10px;background:#faf3e3;border-radius:4px;padding:24px 26px;box-shadow:0 2px 10px rgba(90,58,30,0.08);border-left:4px solid #a35d2b}
+.timeline h3{font-size:1.05rem;color:#5a3a1e;letter-spacing:1.5px;margin-bottom:16px}
+.tl-row{display:flex;align-items:flex-start;gap:14px;padding:9px 0;border-bottom:1px dotted #c69968}
+.tl-row:last-child{border-bottom:none}
+.tl-year{flex:0 0 96px;font-size:0.85rem;font-weight:700;color:#a35d2b;letter-spacing:0.5px}
+.tl-what{flex:1;font-size:0.92rem;color:#3a2e1f}
+.tl-what b{color:#5a3a1e}
+.deep{background:#faf3e3;border-radius:4px;padding:28px 30px;margin-bottom:30px;box-shadow:0 2px 10px rgba(90,58,30,0.08);border-left:4px solid #a35d2b}
+.deep h3{font-size:1.2rem;color:#5a3a1e;margin-bottom:14px;letter-spacing:1.5px}
+.deep details{margin:10px 0;padding:12px 16px;background:rgba(255,255,255,0.5);border-radius:3px;border-left:2px solid #c69968}
+.deep summary{cursor:pointer;font-weight:600;color:#5a3a1e;font-size:0.96rem}
+.deep details[open] summary{margin-bottom:8px}
+.deep details div{font-size:0.92rem;color:#3a2e1f;line-height:1.75;padding-top:4px;border-top:1px dotted #c69968}
+footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#b8a888}
+@media(max-width:600px){
+.container{padding:16px 14px 40px}
+header{padding:40px 0 26px}
+header h1{font-size:1.55rem;letter-spacing:1.5px}
+.event{padding:24px 18px}
+.event h2{font-size:1.22rem}
+.section p{font-size:0.94rem}
+.tl-row{flex-direction:column;gap:2px}
+.tl-year{flex:none}
+.chart .cl{flex:0 0 104px;font-size:0.8rem}
+}
+</style></head><body><div class="container">
+<header>
+<div class="week-tag">Day 56 &middot; 身体的历史</div>
+<h1>身体是社会最诚实的账本，也是最顺手的工具</h1>
+<div class="meta">2026 年 8 月 22 日（周六） &middot; BigCat&apos;s Time Machine</div>
+<div class="epigraph">身体史的四个转折点，没有一个发生在医学里：一次征兵体检、一场纺织业崩塌、一张保险精算表、一次二十六天的占楼。</div>
+</header>
+
+<div class="timeline">
+<h3>四个转折点</h3>
+<div class="tl-row"><div class="tl-year">1829</div><div class="tl-what"><b>身体成为经济指标</b>：让人变矮的是贫困，不是气候</div></div>
+<div class="tl-row"><div class="tl-year">1895&ndash;1928</div><div class="tl-what"><b>缠足退场</b>：机器纱线抽掉了它的经济地基</div></div>
+<div class="tl-row"><div class="tl-year">1928&ndash;1951</div><div class="tl-what"><b>全民早操</b>：同一套动作，三十年换了三次目的</div></div>
+<div class="tl-row"><div class="tl-year">1977</div><div class="tl-what"><b>残障被重新定义</b>：从「这个人有缺陷」到「这栋楼没有坡道」</div></div>
+</div>
+
+<!-- Event 1 -->
+<article class="event">
+<div class="event-num">EVENT &middot; 01</div>
+<h2>一把为凑兵员定的尺子，量出了法国的贫富<span class="en">Villermé, Conscript Heights &amp; the Birth of Anthropometric History &middot; France, 1829</span></h2>
+<span class="tag">1829 年</span><span class="tag">巴黎 / 全法 86 省</span><span class="tag">Villermé 1829 &middot; Fogel 2004 &middot; Komlos</span>
+<div class="section"><div class="section-label">背景与关键人物</div><p>路易-勒内·维莱尔梅（Louis-René Villermé，1782&ndash;1863）当过拿破仑军队的外科医生。征兵制留下一条硬门槛：身高不足 1.57 米免役。这条纯为凑兵员而设的规矩，无意中攒下一套覆盖全国的逐年身体数据。当时对身高地区差的主流解释是气候与「种族」。</p></div>
+<div class="section"><div class="section-label">经过</div><p>1829 年，维莱尔梅在《公共卫生年鉴》创刊卷发表《法国人身高论》。他把 86 个省按纳税额排序，对上各省因身高不足被免役的比例，得到一条近乎单调的关系：<strong>越穷的省，被判「太矮」的年轻人越多。</strong>结论直白得刺耳——<em>决定身高的不是纬度也不是血统，是贫困</em>。身体第一次成了可比较的经济指标。十一年后他用同一套方法调查棉纺工人家庭，促成 1841 年法国第一部童工法。</p>
+<div class="chart">
+<div class="cr"><div class="cl">荷兰男性 1860</div><div class="cb" style="width:40px"></div><div class="cv">约 165 cm</div></div>
+<div class="cr"><div class="cl">荷兰男性 2020</div><div class="cb" style="width:176px"></div><div class="cv">约 182 cm</div></div>
+<div class="cr"><div class="cl">美国男性 1830 世代</div><div class="cb" style="width:104px"></div><div class="cv">约 173 cm</div></div>
+<div class="cr"><div class="cl">美国男性 1890 世代</div><div class="cb" style="width:72px"></div><div class="cv">约 169 cm</div></div>
+<div class="cap">同期美国人均产出翻倍，出生世代身高反降约 4 厘米（Komlos 的「内战前之谜」）：总量增长与身体福祉可长期反向。</div>
+</div>
+</div>
+<div class="section"><div class="section-label">反事实 + 历史学争论</div><div class="counter"><p>若没有这套征兵档案，工业化早期的生活水准之争会一直停在文本对文本：恩格斯说变糟，乐观派说变好，谁也拿不出可核对的量。福格尔（《The Escape from Hunger and Premature Death》，2004）由此提出「技术生理演化」：营养抬高体格与耐力，体格又抬高产出。争论在于身高到底测什么——福格尔重营养摄入，荷兰案例的研究者（Hans de Beer）则认为收入分配与公共卫生的贡献更大。</p></div></div>
+<div class="section"><div class="section-label">当下平行</div><p>世界银行与 WHO 今天用五岁以下儿童发育迟缓率、而非人均 GDP 判断发展有没有落到人身上。同一手法处处成立：用一个长在使用者身上、无法粉饰的下游指标，去校验漂亮的总量数字。</p></div>
+<div class="section"><div class="section-label">一句话教训 + 思考题</div><div class="lesson">总量指标会撒谎，长在人身上的指标不会。</div><div class="thought">你手上哪个「增长」，换成一个长在用户身上的指标去看，会立刻变形？</div></div>
+</article>
+
+<!-- Event 2 -->
+<article class="event">
+<div class="event-num">EVENT &middot; 02</div>
+<h2>终结缠足的，未必是那道懿旨<span class="en">The End of Footbinding &middot; China, 1895&ndash;1930s</span></h2>
+<span class="tag">1895&ndash;1928 年</span><span class="tag">上海 / 华北与西北乡村</span><span class="tag">高彦颐 2005 &middot; Bossen &amp; Gates 2014</span>
+<div class="section"><div class="section-label">背景与关键人物</div><p>明清以降，缠足是汉人女性跨阶层的身份标记。清初顺治、康熙都曾下诏严禁，均无果而废。1895 年，英国人立德夫人（Alicia Little）在上海创办天足会；维新派把缠足写进「弱种」论；1902 年慈禧发布劝戒缠足懿旨；1928 年内政部正式禁令。</p></div>
+<div class="section"><div class="section-label">经过</div><p>官方叙事到此收束：进步话语战胜陋习。但人类学家鲍嘉兰（Laurel Bossen）与盖茨（Hill Gates）在 2000 年代走访华北、西北与四川乡村近一千八百名高龄女性，得到另一条曲线：缠足的分布与女孩的手工劳动高度重合。纺纱、织布、编席这类久坐活计，正需要一个被固定在屋内的劳动力。<strong>缠足退场最早的地方，不是宣传最密集的地方，而是机制纱线与洋布最先进来的地方。</strong>手工纺织的收入一垮，缠脚就从投资变成了纯负担。地基抽掉，风俗才塌。</p></div>
+<div class="section"><div class="section-label">反事实 + 历史学争论</div><div class="counter"><p>若无机器纺织的冲击，仅靠懿旨与劝导，缠足很可能重演清初禁令的下场：政令下过，社会照旧。高彦颐（Dorothy Ko）《缠足：「金莲崇拜」盛极而衰的演变》（2005）提出另一重修正——它并非单纯的男性压迫，曾嵌在女性自己的技艺、体面与婚姻议价里；而反缠足运动在解放双脚的同时，把女性身体重新定义为国家的资产，<em>从「我的脚」变成「种族的脚」</em>。批评者则认为经济解释低估了民族主义话语的动员力。</p></div></div>
+<div class="section"><div class="section-label">当下平行</div><p>审美规范的改变，靠道德倡导远不如靠支撑它的那笔账算不下去。算法推荐正在反向做功：它把某种体态的经济回报重新抬高，身材焦虑与医美需求随之上升——倡导「身体多元」的声量再大，也拗不过分发机制给出的定价。</p></div>
+<div class="section"><div class="section-label">一句话教训 + 思考题</div><div class="lesson">风俗不是被说服改掉的，是它赖以存在的那笔账先算不下去。</div><div class="thought">你想废除的那个「陋习」，背后是谁靠它获利或省事？不动那笔账，倡导能走多远？</div></div>
+</article>
+
+<!-- Event 3 -->
+<article class="event">
+<div class="event-num">EVENT &middot; 03</div>
+<h2>一栋楼被占了二十六天，残障才从病历里走出来<span class="en">The Section 504 Sit-in &middot; San Francisco, April 1977</span></h2>
+<span class="tag">1977 年 4 月</span><span class="tag">旧金山</span><span class="tag">Oliver 1990 &middot; Shakespeare 2006</span>
+<div class="section"><div class="section-label">背景与关键人物</div><p>二十世纪上半叶，残障是医学与优生学的处置对象。1927 年 Buck v. Bell 案，美国最高法院以 8 比 1 支持强制绝育，霍姆斯大法官写下「三代低能已经够了」，此后全美约六万人被绝育。1973 年《康复法》第 504 条只写了一句话：接受联邦资金的机构不得歧视残障者。但配套细则四年无人签署——两届政府都在算改造建筑与交通的成本。</p></div>
+<div class="section"><div class="section-label">经过</div><p>1977 年 4 月 5 日，十个城市同时抗议。旧金山的一支队伍走进联合国广场 50 号的卫生教育福利部大楼，不走了。朱迪·休曼（Judy Heumann，1947&ndash;2023）与基蒂·科恩（Kitty Cone）组织百余人在楼里坚持二十六天——美国史上最长的联邦大楼占领。政府切断电话与热水，黑豹党每天送来热饭。4 月 28 日，部长卡利法诺签署了未被削弱的细则。真正的转折在概念上：<em>问题从「这个人有缺陷」被改写成「这栋楼没有坡道」。</em>责任方一换，可做的事立刻多了一整类。</p></div>
+<div class="section"><div class="section-label">反事实 + 历史学争论</div><div class="counter"><p>当时确有一份替代方案：把残障学生集中安置到专门设施——「隔离但平等」的翻版。若它获签，无障碍会长成一套特殊配套而非通用标准，1990 年《美国残障人法案》大概率失去地基。学界分歧也在此：Mike Oliver《The Politics of Disablement》（1990）的社会模型主张残障完全由环境制造；Tom Shakespeare（2006）反驳说，把损伤本身的疼痛一并抹掉会让重症者失语。</p></div></div>
+<div class="section"><div class="section-label">当下平行</div><p>无障碍的外溢是典型的通用收益：坡道给推婴儿车的人用，字幕给地铁上的人用。软件里的 a11y 同理——为极端场景设下的约束逼你把隐含假设写成显式接口，顺带抬高所有人的体验。</p></div>
+<div class="section"><div class="section-label">一句话教训 + 思考题</div><div class="lesson">把问题从人身上挪到环境上，不是修辞让步，是解法空间的扩张。</div><div class="thought">团队里那句「他就是不行」，换成「流程没给他留接口」，会多出哪几件立刻可做的事？</div></div>
+</article>
+
+<!-- Event 4 -->
+<article class="event">
+<div class="event-num">EVENT &middot; 04</div>
+<h2>全民早操的源头，是一张保险公司的精算表<span class="en">Radio Calisthenics: From an Actuary&rsquo;s Table to a Nation&rsquo;s Morning &middot; 1925&ndash;1951</span></h2>
+<span class="tag">1925&ndash;1951 年</span><span class="tag">纽约 / 东京 / 北京</span><span class="tag">黒田勇 1999 &middot; 黄金麟 2001 &middot; Foucault 1975</span>
+<div class="section"><div class="section-label">背景与关键人物</div><p>1925 年前后，美国大都会人寿保险公司（Metropolitan Life）出钱在电台播健身操。动机毫不崇高：投保人早死，公司赔钱；把死亡率推后几年，就是能计进报表的收益。<strong>大众体操的第一推动力不是国家，是精算表。</strong></p></div>
+<div class="section"><div class="section-label">经过</div><p>日本逓信省简易保险局的官员赴美考察时看到了它。1928 年 11 月 1 日，「ラジオ体操」以昭和天皇即位大礼纪念的名义开播，理由同样朴素：保险局要压低给付。随后它接上了国民体位调查与战时动员。1951 年 11 月 24 日，中华全国体育总会筹委会公布第一套广播体操，12 月 1 日起全国推行；提议者杨烈与编排者刘以珍都有留日背景，制度参照来自苏联 1931 年设立的「劳卫制」。<em>同一套弯腰扩胸的动作，三十年里换了三次目的：降低赔付、动员战争、锻造新国民。</em></p></div>
+<div class="section"><div class="section-label">反事实 + 历史学争论</div><div class="counter"><p>若没有广播，集体操只能靠学校与军队推行，覆盖不到成年人、家庭主妇与农民——<strong>媒介决定了规训能伸多远</strong>。福柯《规训与惩罚》（1975）会把这读作「驯顺的身体」的批量生产；黒田勇《ラジオ体操の誕生》（1999）与黄金麟《历史、身体、国家》（2001）补上另一半：整齐的集体节奏本身提供归属与愉悦，这恰恰是它比命令有效的原因——只解释权力，解释不了人们为什么真的天天做。</p></div></div>
+<div class="section"><div class="section-label">当下平行</div><p>精算逻辑原样回来了：南非 Discovery 的 Vitality（1997 年起）用运动数据换保费折扣，健康险与手环步数挂钩。区别只在颗粒度——当年全城同听一个频道，如今每人一块表，<strong>同步的规训变成了个体化的计分</strong>，而计分比口令更难拒绝。</p></div>
+<div class="section"><div class="section-label">一句话教训 + 思考题</div><div class="lesson">一项被广泛接受的健康习惯，源头常是某人的成本表；看清谁在买单，才知道它下一步往哪里变形。</div><div class="thought">你身上正被记录的哪些身体数据，将来会进入别人的定价模型？你能说不吗？</div></div>
+</article>
+
+<!-- Deep -->
+<section class="deep">
+<h3>深入思考</h3>
+<details><summary>为什么身体是最难造假的历史档案？</summary><div>骨骼长度、牙釉质的发育停滞线、征兵免役率，都是当时的人为别的目的留下的副产品，事后无法回改。这类<strong>非意图产生的证据</strong>价值极高；反过来，凡专门用来自证政绩的数据都该按宣传品对待。</div></details>
+<details><summary>改变身体规范的主力究竟是话语还是账本？</summary><div>缠足与广播体操都指向账本：手工纺织收入崩塌、保险给付压力，是话语背后的推力。但 504 静坐反过来——先改概念，再改成本分配，且必须靠占楼才推得动。较稳的表述是：<em>账本决定改变会不会自发发生，话语决定它往哪个方向定型</em>。</div></details>
+<details><summary>「正常身体」这个范畴是怎么被造出来的？</summary><div>1835 年凯特勒提出「平均人」，把正态分布用于人体测量，BMI 的前身出自他手。统计上的「平均」很快被读成规范上的「应该」，优生学与标准化体检都从这里长出来（Ian Hacking，1990）。今天的健康算法与模型评测基准仍在重演：<strong>描述性的中位数一旦进入决策流程，就成了规范性门槛。</strong></div></details>
+<details><summary>下一次身体规范的重写，会由什么触发？</summary><div>照前四例看，触发点不在医学发布会上，而在成本结构改变处：可穿戴设备把连续体征变成可定价的资产，GLP-1 类药物把「体重是意志力问题」改写成「可购买的干预」，远程办公拆掉了「在场即勤奋」的证明。该盯的不是技术能做什么，而是<em>谁获得了记录你身体的权利、这份记录归谁所有</em>——1829 年那把尺子的权力，正在被交给一块表。</div></details>
+</section>
+<footer>Day 56 &middot; 身体的历史 &middot; BigCat&apos;s Time Machine</footer>
+</div></body></html>
