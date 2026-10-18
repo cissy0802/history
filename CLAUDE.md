@@ -50,3 +50,41 @@ TOPICS.md 是本仓选题的**唯一真相源**。以下三条每次运行都适
 ```
 
 这样 CI 的 inject-comments 不会再对新页面追加自动提交。
+
+## 页面结构增补：越界 + 十条要点（2026-10-17 起）
+
+**2026-10-17 起**，每期中文页 `*-dayN.html` 和英文页 `*-dayN.en.html` 都在最后一个 `.event`（`</article>` 之后）、`<section class="deep">`「深入思考」之前，依次加两个收尾框（**这条优先级高于本仓 routine prompt 里旧的页面结构清单**）：
+
+1. **`.crossx` 越界 · 跨学科的联想**（2026-10-17 起，必写，**3–5 条**）：
+   ```html
+   <div class="crossx"><h3>越界 · 跨学科的联想</h3><ul>
+   <li><b>学科 · 概念/人物</b>：…</li>
+   </ul></div>
+   ```
+   写本期某个历史机制和另一个领域的什么东西是同一个结构，像在哪、不像在哪。**每条约 60–90 字（一两句）**，只有展开的那 1 条可到约 120 字。优先往读者的深度兴趣挂：意识、佛学、量子力学、神经科学、东西方哲学、心理学、生物进化、复杂性科学、分布式系统；旁支领导力、投资、商业。**别挂回历史学自己**（另一段历史、史学方法都不算越界）。提到的研究、人物、年份必须真实准确，拿不准就换一条。史料里当事人/本期引用的学者自己说的进正文；我们联想到的只进越界。各事件的「一句话教训 + 思考题」和「深入思考」已经在往工作/工程上联想，越界**不与它们重复**。英文页标题 `Crossovers`。
+2. **`.takeaways` 十条要点**（2026-10-17 起，必写，**正好 10 条**）：
+   ```html
+   <div class="tk"><h3>十条要点</h3><ol class="takeaways">
+   <li>…</li>
+   </ol></div>
+   ```
+   读者拿它直接记笔记。每条一句完整的话，约 20–45 字，**单独抄出去也能看懂**：写出人物、事件、年份和概念名，不用「他」「这场运动」这类代词。**人名不必每条都当主语开头**：全组里主角的名字出现两三次就够，其余各条直接写观点、机制或事实。覆盖各事件最值得记的史实、机制和教训，可含越界一两条；顺序跟正文走。**只总结正文已经写过的东西**，不加新信息，不放引语。英文页标题 `Ten takeaways`。
+
+CSS（2026-10-17 起；本仓没有 TEMPLATE，新页照抄上一期的 `<style>`——上一期没有这两段就**追加到 `<style>` 里 `@media` 之前**，以后自然沿用）：
+```css
+.crossx{background:#faf3e3;border-radius:4px;padding:26px 30px;margin-bottom:30px;box-shadow:0 2px 10px rgba(90,58,30,0.08);border-left:4px solid #6b7f5a}
+.crossx h3{font-size:1.2rem;color:#4f6142;margin-bottom:12px;letter-spacing:1.5px}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{font-size:0.94rem;line-height:1.8;color:#3a2e1f;padding:9px 0;border-top:1px dotted #a8b394}
+.crossx li:first-child{border-top:none}
+.crossx li b{color:#4f6142}
+.tk{background:#faf3e3;border-radius:4px;padding:26px 30px;margin-bottom:30px;box-shadow:0 2px 10px rgba(90,58,30,0.08);border-left:4px solid #a35d2b}
+.tk h3{font-size:1.2rem;color:#5a3a1e;margin-bottom:12px;letter-spacing:1.5px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:9px 0 9px 40px;border-top:1px dotted #c69968;font-size:0.94rem;line-height:1.75;color:#3a2e1f}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:10px;font-size:0.82rem;font-weight:700;color:#a35d2b;letter-spacing:1px}
+```
+手机端（`@media(max-width:600px)` 里）加：`.crossx,.tk{padding:22px 18px}`。
+
+篇幅：越界约 400 字、十条要点约 350 字；`.maxchars` 已为这两节从 3000 上调到 3750（2026-10-17），正文四个事件的篇幅不变，别借新上限把正文写长。`publish.sh` 只对**从未提交过的新页**查：十条要点正好 10 条、越界 3–5 条。
